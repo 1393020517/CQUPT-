@@ -1,7 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="019a476f-65ae-4692-a4c9-ac53c0075e28" name="Default Changelist" comment="" />
+    <list default="true" id="019a476f-65ae-4692-a4c9-ac53c0075e28" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/examine.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examine.html" beforeDir="false" afterPath="$PROJECT_DIR$/examine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/examine.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/examine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/picture.html" beforeDir="false" afterPath="$PROJECT_DIR$/picture.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/.idea/6666.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/file/Estation-do135838--6420.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/file/QQ图片20190314144551.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/file/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/file/back2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/file/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/file/富士山.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/QQ图片20190314144551.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/back2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/back4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/back_btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/cang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/cang2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/exit1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/flax.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/flax1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/head.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/search_btn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/zan1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/zan2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/富士山.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/星星.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/img/用户.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/js/getdata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/js/login1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/js/login_result.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/js/nice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/js/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/js/tes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/js/upload_photo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/js/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/php/conn.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/php/cookie.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/php/index1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/php/index2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/php/index3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/php/obtain.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/php/save.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/php/search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/php/session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/php/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/php/thumb-up.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/result.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/style/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/style/user.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../重邮图库0.6/word/yihei.otf" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -48,32 +115,51 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1150219452">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="219" />
+          <entry key="html" value="265" />
+          <entry key="js" value="655" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="219" />
+          <entry key="HTML" value="265" />
+          <entry key="JavaScript" value="655" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="3" />
+          <entry key="html" value="1" />
+          <entry key="js" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="1" />
+          <entry key="JavaScript" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../cqupt0.6/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="230" column="21" selection-start-line="230" selection-start-column="21" selection-end-line="230" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../cqupt0.6/style/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-380">
-              <caret line="385" column="8" lean-forward="true" selection-start-line="385" selection-start-column="8" selection-end-line="385" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
+            <state relative-caret-position="444">
+              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
             </state>
           </provider>
         </entry>
@@ -81,8 +167,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="520">
+              <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -90,11 +176,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -102,17 +188,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examine.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="95">
+              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../cqupt0.6/js/login.js">
+        <entry file="file://$PROJECT_DIR$/js/examine.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-999">
-              <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+            <state relative-caret-position="171">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/style/examine.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../cqupt0.6/js/getdata.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="798">
+              <caret line="42" column="9" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="42" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -120,8 +224,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="171">
+              <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -129,8 +233,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/picture.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="171">
+              <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -141,8 +245,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -151,16 +255,20 @@
       <find>signform</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/examine.js" />
-        <option value="$PROJECT_DIR$/user.html" />
-        <option value="$PROJECT_DIR$/picture.html" />
-        <option value="$PROJECT_DIR$/examine.html" />
         <option value="$PROJECT_DIR$/style/main.css" />
-        <option value="$PROJECT_DIR$/main.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/main.html" />
+        <option value="$PROJECT_DIR$/picture.html" />
+        <option value="$PROJECT_DIR$/user.html" />
+        <option value="$PROJECT_DIR$/examine.html" />
+        <option value="$PROJECT_DIR$/style/examine.css" />
+        <option value="$PROJECT_DIR$/js/examine.js" />
       </list>
     </option>
   </component>
@@ -170,12 +278,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="690" />
-    <option name="y" value="-20" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-38" />
+    <option name="y" value="-19" />
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -185,13 +294,18 @@
         <subPane>
           <expand>
             <path>
-              <item name="system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="后台管理系统" type="b2602c69:ProjectViewProjectNode" />
+              <item name="后台管理系统" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="后台管理系统" type="b2602c69:ProjectViewProjectNode" />
+              <item name="后台管理系统" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="后台管理系统" type="b2602c69:ProjectViewProjectNode" />
+              <item name="后台管理系统" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -203,7 +317,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cqupt0.6/style/index.css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cqupt0.6/js/login.js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -231,15 +345,15 @@
       <option name="presentableId" value="Default" />
       <updated>1554116600665</updated>
       <workItem from="1554116602989" duration="4537000" />
+      <workItem from="1554294067361" duration="3984000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4537000" />
+    <option name="totallyTimeSpent" value="8521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24966975" />
@@ -259,6 +373,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24966975" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -267,79 +400,80 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/examine.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../cqupt0.6/js/getdata.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/picture.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examine.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../cqupt0.6/style/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-380">
-          <caret line="385" column="8" lean-forward="true" selection-start-line="385" selection-start-column="8" selection-end-line="385" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../cqupt0.6/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-999">
-          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../cqupt0.6/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="230" column="21" selection-start-line="230" selection-start-column="21" selection-end-line="230" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../cqupt0.6/js/getdata.js" />
+    <entry file="file://$PROJECT_DIR$/../cqupt0.6/style/index.css" />
+    <entry file="file://$PROJECT_DIR$/../cqupt0.6/js/login.js" />
+    <entry file="file://$PROJECT_DIR$/../cqupt0.6/index.html" />
     <entry file="file://$PROJECT_DIR$/style/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
+        <state relative-caret-position="444">
+          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="520">
+          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/picture.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../cqupt0.6/js/getdata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="42" column="9" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="42" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examine.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../cqupt0.6/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="55" column="61" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/examine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/examine.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>

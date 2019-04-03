@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>重邮图库</title>
+    <link rel="stylesheet" href="style/user.css">
+</head>
+<body>
+<div class="top">
+    <div class="top_left">
+        <img src="img/logo1.png">
+    </div>
+    <ul class="top_list">
+            <!--  href待填入  -->
+        <li><a href="#">首页</a></li>
+        <li><a href="">精选</a></li>
+        <li><a href="#middle_2">分类图片</a></li>
+        <li><a href="#middle_1">收藏夹</a></li>
+        <li><a href="#help">帮助</a></li>
+    </ul>
+    <div class="login">
+        <button id="displaysign" onclick="start()"><img src="img/用户.png"></button>&nbsp;&nbsp;&nbsp;
+        <img src="img/星星.png" class="star">
+
+    </div>
+
+</div>
+<div class="search">
+        <input class="search_text" type="text" value="" placeholder="请按标签搜索"id="search_result1">
+        <input class="search_btn" type="submit" value="" id="search_result">
+    <!--<a class="search_btn" type="submit"  id="search_result" ></a>-->
+
+    <p>如:xxxxxxxxxxxxxxxxxxx</p>
+</div>
+<br/>
+<br/>
+<div class="upandselect">
+<span>标签:&nbsp;&nbsp;</span>
+    <select  name="标签"  class="select-small" id="select">
+    <option value="节气">节气</option>
+    <option value="生活">生活</option>
+    <option value="风景">风景</option>
+    <option value="细节">细节</option>
+    <option value="素材">素材</option>
+</select>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <span>浏览：&nbsp;</span><img id="image" src=""  />
+   <div id="upload_pictures">
+
+       <input  type="file"  id="fil" onchange="selectImage(this);" name="image"/>
+       <input class="upfile" type="submit" value="确认上传" id="upload"/>
+
+   </div>
+</div>
+<br/>
+<p class="tips">注意：图片大小不要超过10MB,采用jpg格式，一次上传一张图片</p>
+<br/>
+<br/>
+<div id="container">
+    <div id="list" style="left: -1340px;">
+        <img src="img/flax1.jpg" alt="1" />
+        <img src="img/flax.jpg" alt="2" />
+        <img src="img/flax1.jpg" alt="3" />
+        <img src="img/flax1.jpg" alt="1" />
+        <img src="img/flax.jpg" alt="2" />
+        <img src="img/flax.jpg" alt="4" />
+        <img src="img/flax1.jpg" alt="5" />
+    </div>
+    <div id="buttons">
+        <span index="1" class="on"></span>
+        <span index="2"></span>
+        <span index="3"></span>
+        <span index="4"></span>
+        <span index="5"></span>
+    </div>
+    <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+    <a href="javascript:;" id="next" class="arrow">&gt;</a>
+</div>
+
+<!--  登录表单  -->
+<div class="signform" id="signform" style="display: none" action="" method="post" onsubmit="checkForm(this)">
+    <div class="signclose">
+        <img src="./img/exit1.png" onclick="signclose()">
+    </div>
+    <div class="userdiv">
+        <input id="form_name" class="signinput" type="text" placeholder="原用户名" name="form_user" >
+        <p>如果没有原用户名则为姓名</p>
+    </div>
+    <div class="pwddiv">
+        <input id="user_name" class="signinput" type="text" placeholder="新用户名" name="username">
+
+    </div>
+    <div class="postdiv">
+
+        <input type="button" value="修改" id="change_username">
+
+    </div>
+    <br>
+    <div class="change" style="color: #4d4d4d">
+        <p>想修改密码?<a href="#" style="text-decoration: none;color: #1da3f5">点我</a></p>
+    </div>
+</div>
+<form class="signform" id="registerform" style="display: none" action="" method="post" onsubmit="check(this)">
+    <div class="signclose">
+        <img src="./img/exit1.png"  onclick="signclose()">
+    </div>
+    <div class="userdiv">
+        <input  id="registeruser" class="signinput" type="text" placeholder="学号" name="id">
+    </div>
+    <div class="pwddiv">
+        <input  id="registerformpwd" class="signinput" type="password" placeholder="原密码" name="oldpwd">
+    </div>
+    <div class="pwddiv">
+        <input  id="registerpwd" class="signinput" type="password" placeholder="新密码" name="newpwd">
+    </div>
+    <div class="pwddiv">
+        <input  id="registerrepwd" class="signinput" type="password" placeholder="再次输入密码" name="newpwd1">
+    </div>
+
+    <div class="postdiv">
+
+        <input type="submit" value="修改密码" id="changepwd">
+    </div>
+    <br>
+    <div class="change" style="color: #4d4d4d">
+        <p><a href="#" style="text-decoration: none;color: #1da3f5">点我</a>去改用户名</p>
+    </div>
+</form>
+<!--  登录表单  -->
+<div class="middle1" id="middle_1">
+    <h2>收藏夹</h2>
+    <form action="" class="picture_wrap">
+        <ul class="picture1">
+            <li><a href="#"> <img src="img/test.png" alt=""> </a></li>
+            <li><a href="#"> <img src="img/test.png" alt=""> </a></li>
+            <li><a href="#"> <img src="img/test.png" alt=""> </a></li>
+            <li><a href="#"> <img src="img/test.png" alt=""> </a></li>
+            <li><a href="#"> <img src="img/test.png" alt=""> </a></li>
+            <li><a href="#"> <img src="img/test.png" alt=""> </a></li>
+            <li><a href="#"> <img src="img/test.png" alt=""> </a></li>
+            <li><a href="#"> <img src="img/test.png" alt=""> </a></li>
+
+        </ul>
+
+    </form>
+</div>
+<div class="bg"></div>
+<div class="middle2" id="middle_2">
+    <h2>分类图片</h2>
+    <form action="" class="picture_wrap">
+        <ul class="picture1">
+            <li><a href=""class="pictures"> <img src="img/test.png" alt=""> </a>
+                <a href="" class="cang"> <img src="img/cang.png" alt="" > </a>
+                <a href="" class="zan"> <img src="img/zan1.png" alt="" id="zan1"> </a>
+                <img src="img/back_btn.png" class="back_btn">
+            </li>
+            <li><a href=""class="pictures"> <img src="img/test.png" alt=""> </a>
+                <a href="" class="cang"> <img src="img/cang.png" alt=""> </a>
+                <a href="" class="zan"> <img src="img/zan1.png" alt=""> </a>
+                <img src="img/back_btn.png" class="back_btn">
+            </li>
+            <li><a href="#"class="pictures"> <img src="img/test.png" alt=""> </a>
+                <a href="#" class="cang"> <img src="img/cang.png" alt=""> </a>
+                <a href="#" class="zan"> <img src="img/zan1.png" alt=""> </a>
+                <img src="img/back_btn.png" class="back_btn">
+            </li>
+            <li><a href="#"class="pictures"> <img src="img/test.png" alt=""> </a>
+                <a href="#" class="cang"> <img src="img/cang.png" alt=""> </a>
+                <a href="#" class="zan"> <img src="img/zan1.png" alt=""> </a>
+                <img src="img/back_btn.png" class="back_btn">
+            </li>
+            <li><a href="#"class="pictures"> <img src="img/test.png" alt=""> </a>
+                <a href="#" class="cang"> <img src="img/cang.png" alt=""> </a>
+                <a href="#" class="zan"> <img src="img/zan1.png" alt=""> </a>
+                <img src="img/back_btn.png" class="back_btn">
+            </li>
+            <li><a href="#"class="pictures"> <img src="img/test.png" alt=""> </a>
+                <a href="#" class="cang"> <img src="img/cang.png" alt=""> </a>
+                <a href="#" class="zan"> <img src="img/zan1.png" alt=""> </a>
+                <img src="img/back_btn.png" class="back_btn">
+            </li>
+            <li><a href="#"class="pictures"> <img src="img/test.png" alt=""> </a>
+                <a href="#" class="cang"> <img src="img/cang.png" alt=""> </a>
+                <a href="#" class="zan"> <img src="img/zan1.png" alt=""> </a>
+                <img src="img/back_btn.png" class="back_btn">
+            </li>
+            <li><a href="#"class="pictures"> <img src="img/test.png" alt=""> </a>
+                <a href="#" class="cang"> <img src="img/cang.png" alt=""> </a>
+                <a href="#" class="zan"> <img src="img/zan1.png" alt=""> </a>
+                <img src="img/back_btn.png" class="back_btn">
+            </li>
+            <li><a href="#"class="pictures"> <img src="img/test.png" alt=""> </a>
+                <a href="#" class="cang"> <img src="img/cang.png" alt=""> </a>
+                <a href="#" class="zan"> <img src="img/zan1.png" alt=""> </a>
+                <img src="img/back_btn.png" class="back_btn">
+            </li>
+            <li><a href="#"class="pictures"> <img src="img/test.png" alt=""> </a>
+                <a href="#" class="cang"> <img src="img/cang.png" alt=""> </a>
+                <a href="#" class="zan"> <img src="img/zan1.png" alt=""> </a>
+                <img src="img/back_btn.png" class="back_btn">
+            </li>
+            <li><a href="#"class="pictures"> <img src="img/test.png" alt=""> </a>
+                <a href="#" class="cang"> <img src="img/cang.png" alt=""> </a>
+                <a href="#" class="zan"> <img src="img/zan1.png" alt=""> </a>
+                <img src="img/back_btn.png" class="back_btn">
+            </li>
+            <li><a href="#"class="pictures"> <img src="img/test.png" alt=""> </a>
+                <a href="#" class="cang"> <img src="img/cang.png" alt=""> </a>
+                <a href="#" class="zan"> <img src="img/zan1.png" alt=""> </a>
+                <img src="img/back_btn.png" class="back_btn">
+            </li>
+
+        </ul>
+
+    </form>
+</div>
+<div id="help">
+    <div class="logo2">
+        <img src="img/logo1.png">
+    </div>
+    <img src="img/line.png">
+    <h2>帮助</h2>
+    <br>
+    <br>
+    <h3>一、用户</h3>
+    <br>
+    <br>
+    <p>
+        （1）登录注册：您可以通过账号和密码来登录；您的账号就是您的学号，默认密码为“123456”。<br>
+        <br>
+        （2）变更密码：如果您希望修改密码，可以在登录框中进行修改哦。<br>
+        <br>
+        （3）收藏夹：在注册登录后点击页面右上角“收藏夹”按钮，可以查看收藏夹。<br></p>
+    <br>
+    <br>
+    <h3>二、搜索图片</h3>
+    <br>
+    <p>（1） 您可以在首页下方的搜索框中，根据标签来搜索。<br><br>
+        （2） 在搜索页面，您可以为喜爱的图片点赞，也可以勾选图片，把它放进您的收藏夹。<br><br>
+    </p><br><br>
+    <h3>三、上传图片</h3><br>
+    <p>
+        （1） 您可以点击“上传图片”，分享您的图片。<br><br>
+        （2） 为您的图片加上标签吧。<br><br></p><br>
+    <h4 >联系我们</h4>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/login1.js"> </script>
+<script type="text/javascript" src="js/nice.js"></script>
+<script src="./js/user.js"></script>
+<script>/*搜索跳转*/
+
+
+var search_result=document.getElementById('search_result');
+search_result.onclick=function () {
+    var search_text=document.getElementById('search_result1').value;
+    if(search_text===''){
+        alert('输入框不能为空');
+        return false;
+    }
+    else{
+        var search_text1=document.getElementById('search_result1').value;
+        window.location.href ="./result.html?key="+search_text1
+    }
+};</script>
+</html>

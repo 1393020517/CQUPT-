@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Title</title>
+</head>
+<body>
+<h1>重邮图库后台管理系统</h1>
+
+<button id="load" onclick="start()">登录</button>
+<div class="signform" id="signform" style="display: none"  >
+    <div class="signclose">
+        <img src="./img/exit1.png" onclick="signclose()">
+    </div>
+    <div class="userdiv">
+        <input id="user" class="signinput" type="text" placeholder="账号" name="id" >
+    </div>
+    <div class="pwddiv">
+        <input id="pwd" class="signinput" type="password" placeholder="密码" name="pwd">
+    </div>
+    <div class="postdiv">
+
+        <input type="submit" value="登录" id="denglubutton" >
+
+    </div>
+
+</div>
+
+<div class="enter">
+    <button id="pic">图片管理</button>
+    <button id="exam">审核图片</button>
+    <button id="user_list">用户列表</button>
+
+</div>
+
+
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>

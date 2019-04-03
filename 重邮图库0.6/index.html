@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>重邮图库</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+<div class="content">
+    <div class="top">
+        <div class="top_left">
+            <img src="img/logo1.png">
+        </div>
+        <ul class="top_list">
+            <!--  href待填入  -->
+            <li><a >首页</a></li>
+            <li><a href="#middle12">精选</a></li>
+            <li><a href="#middle13">分类图片</a></li>
+            <li><a href="JavaScript:undo();">收藏夹</a></li>
+            <li><a href="#help">帮助</a></li>
+        </ul>
+        <div class="login">
+            <button id="displaysign" onclick="start()" style="display: none">登录</button>
+            <button id="displaysign1" onclick="start()"><img src="img/用户.png"></button>&nbsp;
+        </div>
+
+    </div>
+    <div class="search">
+
+            <input class="search_text" type="text" value="" placeholder="请按标签搜索" id="search_1">
+            <input class="search_btn" type="submit" value="" id="search_btn">
+
+        <p>如:xxxxxxxxxxxxxxxxxxx</p>
+    </div>
+
+    <!--  登录表单  -->
+    <div class="signform" id="signform" style="display: none"  >
+        <div class="signclose">
+            <img src="./img/exit1.png" onclick="signclose()">
+        </div>
+        <div class="userdiv">
+            <input id="user" class="signinput" type="text" placeholder="学号" name="id" >
+        </div>
+        <div class="pwddiv">
+            <input id="pwd" class="signinput" type="password" placeholder="密码" name="pwd">
+            <p>密码默认：123456</p>
+        </div>
+        <div class="postdiv">
+
+            <input type="submit" value="登录" id="denglubutton" >
+
+        </div>
+        <br>
+        <div class="change" style="color: #4d4d4d">
+            <p>想修改密码?<a href="#" style="text-decoration: none;color: #1da3f5">点我</a></p>
+        </div>
+    </div>
+    <div class="signform" id="registerform" style="display: none">
+        <div class="signclose">
+            <img src="./img/exit1.png"  onclick="signclose()">
+        </div>
+        <div class="userdiv">
+            <input  id="registeruser" class="signinput"  type="text" placeholder="学号" name="id">
+        </div>
+        <div class="pwddiv">
+            <input  id="registerformpwd" class="signinput" type="password" placeholder="原密码" name="oldpwd">
+        </div>
+        <div class="pwddiv">
+            <input  id="registerpwd" class="signinput" type="password" placeholder="新密码" name="newpwd">
+        </div>
+        <div class="pwddiv">
+            <input  id="registerrepwd" class="signinput" type="password" placeholder="再次输入密码" name="newpwd1">
+        </div>
+
+        <div class="postdiv">
+
+            <input type="submit" value="修改密码" id="changepwd">
+        </div>
+        <br>
+        <div class="change" style="color: #4d4d4d">
+            <p><a href="#" style="text-decoration: none;color: #1da3f5">点我</a>去登录</p>
+        </div>
+    </div>
+    <!--  登录表单  -->
+    <div class="middle1" id="middle12">
+        <h2>精选图片</h2>
+        <form action="" class="picture_wrap">
+            <ul class="picture1">
+                <li><a href="" download=""> <img src="img/test.png" alt=""> </a></li>
+                <li><a href="" download=""> <img src="img/test.png" alt=""> </a></li>
+                <li><a href="" download=""> <img src="img/test.png" alt=""> </a></li>
+                <li><a href="" download=""> <img src="img/test.png" alt=""> </a></li>
+                <li><a href="" download=""> <img src="img/test.png" alt=""> </a></li>
+                <li><a href="" download=""> <img src="img/test.png" alt=""> </a></li>
+                <li><a href="" download=""> <img src="img/test.png" alt=""> </a></li>
+                <li><a href="" download=""> <img src="img/test.png" alt=""> </a></li>
+            </ul>
+
+        </form>
+    </div>
+    <div class="bg"></div>
+    <div class="middle2" id="middle13">
+        <h2>分类图片</h2>
+        <form action="" class="picture_wrap">
+            <ul class="picture1">
+                <li><a href="" class="pictures"> <img src="img/test.png" alt=""> </a>
+                    <!--<img src="img/cang.png" alt="" class="cang" id="cang1" >-->
+                    <img src="img/zan1.png" alt="" class="zan" id="zan1">
+                    <img src="img/back_btn.png" class="back_btn">
+                    <div class="point">666</div>
+                </li>
+                <li><a href="" class="pictures"> <img src="img/test.png" alt=""> </a>
+                    <!--<img src="img/cang.png" alt="" class="cang" id="cang2">-->
+                    <img src="img/zan1.png" alt="" class="zan" id="zan2">
+                    <img src="img/back_btn.png" class="back_btn">
+                    <div class="point">666</div>
+                </li>
+                <li><a href="" class="pictures"> <img src="img/test.png" alt=""> </a>
+                    <!--<img src="img/cang.png" alt="" class="cang" id="cang3">-->
+                    <img src="img/zan1.png" alt="" class="zan" id="zan3">
+                    <img src="img/back_btn.png" class="back_btn">
+                    <div class="point">666</div>
+                </li>
+                <li><a href="" class="pictures"> <img src="img/test.png" alt=""> </a>
+                    <!--<img src="img/cang.png" alt="" class="cang" id="cang4">-->
+                    <img src="img/zan1.png" alt="" class="zan" id="zan4">
+                    <img src="img/back_btn.png" class="back_btn">
+                    <div class="point">666</div>
+                </li>
+                <li><a href="" class="pictures"> <img src="img/test.png" alt=""> </a>
+                    <!--<img src="img/cang.png" alt="" class="cang" id="cang5">-->
+                    <img src="img/zan1.png" alt="" class="zan" id="zan5">
+                    <img src="img/back_btn.png" class="back_btn">
+                    <div class="point">666</div>
+                </li>
+                <li><a href="" class="pictures"> <img src="img/test.png" alt=""> </a>
+                    <!--<img src="img/cang.png" alt="" class="cang" id="cang6">-->
+                    <img src="img/zan1.png" alt="" class="zan" id="zan6">
+                    <img src="img/back_btn.png" class="back_btn">
+                    <div class="point">666</div>
+                </li>
+                <li><a href="" class="pictures"> <img src="img/test.png" alt=""> </a>
+                    <!--<img src="img/cang.png" alt="" class="cang" id="cang7">-->
+                    <img src="img/zan1.png" alt="" class="zan" id="zan7">
+                    <img src="img/back_btn.png" class="back_btn">
+                    <div class="point">666</div>
+                </li>
+                <li><a href="" class="pictures"> <img src="img/test.png" alt=""> </a>
+                    <!--<img src="img/cang.png" alt="" class="cang" id="cang8">-->
+                    <img src="img/zan1.png" alt="" class="zan" id="zan8">
+                    <img src="img/back_btn.png" class="back_btn">
+                    <div class="point">666</div>
+                </li>
+                <li><a href="" class="pictures"> <img src="img/test.png" alt=""> </a>
+                    <!--<img src="img/cang.png" alt="" class="cang" id="cang9">-->
+                    <img src="img/zan1.png" alt="" class="zan" id="zan9">
+                    <img src="img/back_btn.png" class="back_btn">
+                    <div class="point">666</div>
+                </li>
+                <li><a href="" class="pictures"> <img src="img/test.png" alt=""> </a>
+                    <!--<img src="img/cang.png" alt="" class="cang" id="cang10">-->
+                    <img src="img/zan1.png" alt="" class="zan" id="zan10">
+                    <img src="img/back_btn.png" class="back_btn">
+                    <div class="point">666</div>
+                </li>
+                <li><a href="" class="pictures"> <img src="img/test.png" alt=""> </a>
+                    <!--<img src="img/cang.png" alt="" class="cang" id="cang11">-->
+                    <img src="img/zan1.png" alt="" class="zan" id="zan11">
+                    <img src="img/back_btn.png" class="back_btn">
+                    <div class="point">666</div>
+                </li>
+                <li><a href="" class="pictures"> <img src="img/test.png" alt=""> </a>
+                    <!--<img src="img/cang.png" alt="" class="cang" id="cang12">-->
+                    <img src="img/zan1.png" alt="" class="zan" id="zan12">
+                    <img src="img/back_btn.png" class="back_btn">
+                    <div class="point">666</div>
+                </li>
+
+            </ul>
+
+        </form>
+    </div>
+    <div id="help">
+        <div class="logo2">
+            <img src="img/logo1.png" >
+        </div>
+        <img src="img/line.png">
+        <h2>帮助</h2>
+        <br>
+        <br>
+        <h3>一、用户</h3>
+        <br>
+        <br>
+        <p>
+            （1）登录注册：您可以通过账号和密码来登录；您的账号就是您的学号，默认密码为“123456”。<br>
+            <br>
+            （2）变更密码：如果您希望修改密码，可以在登录框中进行修改哦。<br>
+            <br>
+            （3）收藏夹：在注册登录后点击页面右上角“收藏夹”按钮，可以查看收藏夹。<br></p>
+        <br>
+        <br>
+        <h3>二、搜索图片</h3>
+        <br>
+        <p>（1） 您可以在首页下方的搜索框中，根据标签来搜索。<br><br>
+            （2） 在搜索页面，您可以为喜爱的图片点赞，也可以勾选图片，把它放进您的收藏夹。<br><br>
+        </p><br><br>
+        <h3>三、上传图片</h3><br>
+        <p>
+            （1） 您可以点击“上传图片”，分享您的图片。<br><br>
+            （2） 为您的图片加上标签吧。<br><br></p><br>
+        <h4 >联系我们</h4>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/login.js"> </script>
+<script type="text/javascript" src="js/nice.js"></script>
+
+<script>/*搜索跳转*/
+
+
+var search_result=document.getElementById('search_btn');
+search_result.onclick=function () {
+    var search_text=document.getElementById('search_1').value;
+if(search_text===''){
+    alert('输入框不能为空');
+    return false;
+}
+else{
+    var search_text1=document.getElementById('search_1').value;
+    window.location.href ="./result.html?key="+search_text1
+}
+};</script>
+<script>function undo() {
+    alert('未完待续')
+}
+</script>
+</html>

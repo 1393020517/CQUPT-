@@ -1,0 +1,480 @@
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+body {
+    background: url('../img/back4.png') no-repeat;
+    background-size: 100% 100%;
+}
+@font-face {
+    font-family: yihei;
+    src: url('../word/yihei.otf');
+}
+
+
+
+
+@media screen and (max-width: 1900px) {
+
+}
+
+
+
+
+
+.top {
+    width:1400px;
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+
+}
+.top_left {
+
+    float: right;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 300px;
+
+}
+.top_left img{
+    left: -260px;
+    top: -60px;
+    float: right;
+    width: 450px;
+    height: 300px;
+    position: absolute;
+
+
+}
+.top_list {
+    padding-top: 50px;
+    width: 520px;
+    margin: 0 auto;
+}
+
+.top_list li {
+
+
+    display: inline;
+
+    font-size: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+
+}
+
+.top_list a {
+
+    color: #04bafb;
+}
+
+.top_list a:hover {
+    color: #1da3f5;
+}
+.login {
+    position: absolute;
+    right: -50px;
+    top: -10px;
+}
+#displaysign {
+    border: 0;
+    background-color: transparent;
+    color:#04bafb ;
+    outline: none;
+    font-size: 30px;
+    font-family: "Segoe Script";
+    margin-top:50px;
+    margin-right: 200px;
+}
+#displaysign:hover {
+    cursor: pointer;
+    color: #1da3f5;
+}
+
+.bg{
+
+
+    height:400px;
+    background:url("../img/flax.jpg");
+    background-attachment: fixed;
+}
+.bg1{
+
+
+    height:500px;
+    background:url("../img/flax.jpg");
+    background-attachment: fixed;
+}
+.search {
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.search_text {
+    background: #ffffff;
+    height: 38px;
+    color: #4d4d4d;
+    outline: none;
+    margin-left: 500px;
+    width: 415px;
+    border: #1da3f5 solid 1px;
+    border-radius: 8px;
+    padding-left: 10px;
+    font-size: 20px;
+
+}
+
+.search_btn {
+    top: 5px;
+    right: 480px;
+    height: 30px;
+    border: none;
+    position: absolute;
+    width: 42px;
+background: url("../img/search_btn.jpg");
+
+
+}
+.search_btn:hover {
+    cursor: pointer;
+}
+.search p {
+    width: 140px;
+    margin: 0 auto;
+}
+.search_text::-webkit-input-placeholder{
+    color: #a2a2a2;
+
+}
+.search_text::-moz-placeholder{
+color: #a2a2a2;
+
+}
+.search_text::-ms-input-placeholder{
+color: #a2a2a2;
+
+}
+
+.middle1 {
+    padding-top: 40px;
+    margin: 0 auto;
+    width:1400px;
+}
+.middle1 h2 {
+    font-size:25px ;
+    color: white;
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+.picture_wrap {
+    margin: 0 auto;
+    width: 1400px;
+}
+.picture_wrap1 {
+    margin: 0 auto;
+    width: 1400px;
+    height: 1000px;
+}
+
+.picture1 {
+    margin: 0 auto;
+    padding-top: 14px;
+    height: 460px;
+    width: 1364px;
+}
+.picture1 li{
+    padding-bottom: 8px;
+    padding-right: 4px;
+    padding-left: 4px;
+    float: left;
+    width: 333px;
+    height: 150px;
+    position: relative;
+}
+.pictures img{
+    z-index: -1;
+    width: 333px;
+    height: 150px;
+}
+.back_btn {z-index: 100;
+    position: absolute;
+    top: 130px;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    width: 25px;
+    height: 20px;
+}
+.cang {
+    z-index: 900;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    float: left;
+    top: 132px;
+    left:24px;
+}
+
+
+
+
+.zan1 {
+    position: absolute;
+    z-index: 999;
+    top: 129px;
+    left: 2px;
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+.zan1 img{
+     position: absolute;
+
+     float: left;
+     width: 25px;
+     height: 25px;
+ }
+.zan1 img:hover {
+    cursor: pointer;
+}
+
+
+
+
+.zan {
+    position: absolute;
+    z-index: 990;
+    top: 129px;
+    left: 2px;
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+.zan {
+    position: absolute;
+
+    float: left;
+    width: 25px;
+    height: 25px;
+}
+.zan:hover {
+    cursor: pointer;
+}
+.cang {
+    width: 18px;
+    height: 18px;
+    float: left;
+}
+.cangform:hover {
+    cursor: pointer;
+}
+
+.middle2 {
+    padding-top: 62px;
+    padding-bottom: 400px;
+}
+.middle2 h2 {
+    font-size:25px ;
+    color: white;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.point {
+    position: absolute;
+    right:4px;
+    top:132px;
+    width: 40px;
+    height: 20px;
+    color:white ;
+    background: black;
+    text-align: center;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+#help{
+    padding-top: 50px;
+    width: 1400px;
+    height: 800px;
+    position: relative;
+
+}
+.logo2 {
+  position: absolute;
+    height: 54px;
+    width: 178px;
+
+
+
+}
+.logo2  img{
+    position: absolute;
+    height: 400px;
+    width: 550px;
+    top: -50px;
+
+}
+#help img {
+    position: absolute;
+ left: 32%;
+}
+#help h2{
+
+    font-size: 40px;
+    color: #fbfafa;
+    font-weight: normal;
+
+    text-align: center;
+}
+
+#help p {
+    color: #fbfafa;
+    font-size: 18px;
+    padding-left: 500px;
+    width: 800px;
+}
+
+#help h4 {
+    padding-left: 500px;
+    color: #fbfafa;
+    font-size: 25px;
+
+}
+#help h3 {
+    padding-left: 500px;
+    color: #fbfafa;
+    font-size: 18px;
+
+}
+
+
+/*登录表单*/
+.signform {
+
+    position: fixed;
+    background-color: white;
+    top: 20%;
+    left: 30%;
+    width: 500px;
+    height: 400px;
+    border-radius: 1em;
+    text-align: center;
+    z-index: 999;
+}
+#registerform {
+    height: 450px;
+}
+.signclose {
+    cursor: pointer;
+    float: right;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    height: 35px;
+    width: 35px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.signinput {
+    text-align: center;
+    border-radius: 0.2em;
+    width: 280px;
+    height: 45px;
+    border: none;
+    background-color:#f2f2f2;
+    font-size: 28px;
+}
+.signinput::-webkit-input-placeholder {
+    font-size: 26px;
+}
+.userdiv {
+    position: relative;
+    margin-top: 80px;
+}
+.pwddiv {
+    position: relative;
+    margin-top: 20px;
+}
+.postdiv {
+    position: relative;
+    margin-top: 20px;
+}
+.postdiv input {
+    cursor: pointer;
+    color: white;
+    font-size: 26px;
+    border: none;
+    border-radius: 0.4em;
+    width: 280px;
+    height: 45px;
+    background-color:#04bafb;
+}
+.postdiv input:hover {
+    color: #229beb;
+}
+
+
+.pwddiv p {
+    color: #42494f;
+}
+
+
+
+#displaysign1 {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color:#04bafb ;
+    outline: none;
+    font-size: 30px;
+    font-family: "Segoe Script";
+    margin-top:50px;
+    margin-right: 200px;
+}
+#displaysign1:hover {
+    cursor: pointer;
+    color: #1da3f5;
+}
+
+#displaysign1 img {
+    display: block;
+    margin-right: 40px;
+    margin-top: 8px;
+    height: 36px;
+    width: 36px;
+}

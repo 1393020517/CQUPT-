@@ -2,10 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>图片管理索引</title>
+   <style>
+       body {
+           background: dodgerblue;
+       }
+       h1 {
+           font-size: 40px;
+           margin: 0 auto;
+           color: white;
+           text-align: center;
+           margin-top: 50px;
+       }
+
+
+       #btns{
+
+           text-align: center;
+       }
+       p{
+           color: white;
+       }
+   </style>
 </head>
 <body>
-
+<h1>图片管理索引</h1>
+<div id="btns">
+    <p>景色：</p>
+    <button id="btn0" onclick="locate(0)">校园一角</button>
+    <button id="btn1" onclick="locate(1)">时刻</button>
+    <button id="btn2" onclick="locate(2)">动物</button>
+    <p>日常：</p>
+    <button id="btn3" onclick="locate(3)">学习</button>
+    <button id="btn4" onclick="locate(4)">课堂</button>
+    <button id="btn5" onclick="locate(5)">竞赛</button>
+    <button id="btn6" onclick="locate(6)">美食</button>
+    <button id="btn7" onclick="locate(7)">环保</button>
+    <button id="btn8" onclick="locate(8)">活动</button>
+    <button id="btn9" onclick="locate(9)">志愿</button>
+    <button id="btn10" onclick="locate(10)">科技</button>
+    <button id="btn11" onclick="locate(11)">运动</button>
+    <button id="btn12" onclick="locate(12)">小确幸</button>
+    <p>节日：</p>
+    <button id="btn13" onclick="locate(13)">元旦</button>
+    <button id="btn14" onclick="locate(14)">春节</button>
+    <button id="btn15" onclick="locate(15)">元宵</button>
+    <button id="btn16" onclick="locate(16)">清明</button>
+    <button id="btn17" onclick="locate(17)">青年节</button>
+    <button id="btn18" onclick="locate(18)">父亲节</button>
+    <button id="btn19" onclick="locate(19)">母亲节</button>
+    <button id="btn20" onclick="locate(20)">建党节</button>
+    <button id="btn21" onclick="locate(21)">建军节</button>
+    <button id="btn22" onclick="locate(22)">教师节</button>
+    <button id="btn23" onclick="locate(23)">中秋节</button>
+    <button id="btn24" onclick="locate(24)">国庆节</button>
+    <button id="btn25" onclick="locate(25)">感恩节</button>
+</div>
 </body>
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+
+    function locate(number) {
+        var title=document.getElementById('btn'+number).innerHTML;
+        window.location.href ="./pic_result.html?key="+title
+    }
+</script>
 </html>

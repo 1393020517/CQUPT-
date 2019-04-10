@@ -9,186 +9,148 @@
 <div class="top">
     <img src="img/logo.png" class="logo">
     <div class="top_list">
-        <span class="top_btns">审核图片</span>
-        <span class="top_btns">图片管理</span>
-        <span class="top_btns">用户管理</span>
+        <span class="top_btns" onclick="examine()">审核图片</span>
+        <span class="top_btns" onclick="picture()">图片管理</span>
+        <span class="top_btns" onclick="user()">用户管理</span>
     </div>
 </div>
-<div class="examine">
+<div class="examine"  style="display: none" id="examine">
     <h1>审核图片</h1>
-    <div class="picture">
+    <div class="picture" >
 
-        <!--<ul>-->
-        <!--<li><img id="pic0" src="img/test.png">-->
-        <!--<button onclick="pass_pic(0)">通过</button>-->
-        <!--<p id="tip0">节气</p></li>-->
-        <!--<li><img id="pic1" src="img/test.png">-->
-        <!--<button onclick="pass_pic(1)">通过</button>-->
-        <!--<p id="tip1">节气</p></li>-->
-        <!--<li><img id="pic2" src="img/test.png">-->
-        <!--<button onclick="pass_pic(2)">通过</button>-->
-        <!--<p id="tip2">节气</p></li>-->
-        <!--<li><img id="pic3" src="img/test.png">-->
-        <!--<button onclick="pass_pic(3)">通过</button>-->
-        <!--<p id="tip3">节气</p></li>-->
-        <!--<li><img id="pic4" src="img/test.png">-->
-        <!--<button onclick="pass_pic(4)">通过</button>-->
-        <!--<p id="tip4">节气</p></li>-->
-        <!--<li><img id="pic5" src="img/test.png">-->
-        <!--<button onclick="pass_pic(5)">通过</button>-->
-        <!--<p id="tip5">节气</p></li>-->
-        <!--<li><img id="pic6" src="img/test.png">-->
-        <!--<button onclick="pass_pic(6)">通过</button>-->
-        <!--<p id="tip6">节气</p></li>-->
-        <!--<li><img id="pic7" src="img/test.png">-->
-        <!--<button  onclick="pass_pic(7)">通过</button>-->
-        <!--<p id="tip7">节气</p></li>-->
-        <!--<li><img  id="pic8" src="img/test.png">-->
-        <!--<button  onclick="pass_pic(8)">通过</button>-->
-        <!--<p id="tip8">节气</p></li>-->
-        <!--<li><img  id="pic9" src="img/test.png">-->
-        <!--<button  onclick="pass_pic(9)">通过</button>-->
-        <!--<p id="tip9">节气</p></li>-->
-        <!--<li><img  id="pic10" src="img/test.png">-->
-        <!--<button onclick="pass_pic(10)">通过</button>-->
-        <!--<p id="tip10">节气</p></li>-->
-        <!--<li><img  id="pic11" src="img/test.png">-->
-        <!--<button onclick="pass_pic(11)">通过</button>-->
-        <!--<p id="tip11">节气</p></li>-->
-        <!--</ul>-->
 
         <ul class="ul1">
             <li class="li_first">
-            <img class="pics" src="img/test.png">
+            <img class="pics" id="pic0" src="img/test.png">
             <img class="back_btns" src="img/back_btn.png">
-            <span class="title">节气</span>
-            <div class="pass"><span class="pass_0">通过</span></div>
+            <span class="title" id="tip0">节气</span>
+            <div class="pass"><span class="pass_0" onclick="pass_pic(0)">通过</span></div>
         </li>
             <li >
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic1" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip1">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(1)">通过</span></div>
             </li>
             <li>
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic2" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip2">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(2)">通过</span></div>
             </li>
             <li >
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic3" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip3">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(3)">通过</span></div>
             </li>
 
         </ul>
         <ul class="ul1">
             <li class="li_first">
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic4" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip4">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(4)">通过</span></div>
             </li>
             <li>
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic5" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip5">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(5)">通过</span></div>
             </li>
             <li >
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic6" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip6">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(6)">通过</span></div>
             </li>
             <li>
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic7" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip7">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(7)">通过</span></div>
             </li>
 
         </ul>
         <ul class="ul1">
             <li class="li_first">
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic8" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip8">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(8)">通过</span></div>
             </li>
             <li >
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic9" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip9">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(9)">通过</span></div>
             </li>
             <li>
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic10" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip10">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(10)">通过</span></div>
             </li>
             <li >
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic11" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip11">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(11)">通过</span></div>
             </li>
 
         </ul>
         <ul class="ul1">
             <li class="li_first">
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic12" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip12">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(12)">通过</span></div>
             </li>
             <li>
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic13" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip13">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(13)">通过</span></div>
             </li>
             <li >
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic14" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip14">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(14)">通过</span></div>
             </li>
             <li >
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic15" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip15">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(15)">通过</span></div>
             </li>
 
         </ul>
         <ul class="ul1">
             <li class="li_first">
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic16" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip16">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(16)">通过</span></div>
             </li>
             <li >
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic17" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip17">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(17)">通过</span></div>
             </li>
             <li>
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic18" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip18">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(18)">通过</span></div>
             </li>
             <li>
-                <img class="pics" src="img/test.png">
+                <img class="pics" id="pic19" src="img/test.png">
                 <img class="back_btns" src="img/back_btn.png">
-                <span class="title">节气</span>
-                <div class="pass"><span class="pass_0">通过</span></div>
+                <span class="title" id="tip19">节气</span>
+                <div class="pass"><span class="pass_0" onclick="pass_pic(19)">通过</span></div>
             </li>
 
         </ul>
@@ -196,17 +158,342 @@
     </div>
 
 
-    <!--<div class="btns">-->
-    <!--<button id="btn1" class="btn" onclick='nextpage(1)'>1</button>-->
-    <!--<button id="btn2" class="btn" onclick='nextpage(2)'>2</button>-->
-    <!--<button id="btn3" class="btn" onclick='nextpage(3)'>3</button>-->
-    <!--<button id="btn4" class="btn" onclick='nextpage(4)'>4</button>-->
-    <!--<button id="btn5" class="btn" onclick='nextpage(5)'>5</button>-->
-    <!--</div>-->
-<div class=""></div>
+    <div class="btns">
+            <span onclick="nextpage(1)">1</span>
+            <span onclick="nextpage(2)">2</span>
+            <span onclick="nextpage(3)">3</span>
+            <span onclick="nextpage(4)">4</span>
+            <span onclick="nextpage(5)">5</span>
+    </div>
+
 
 </div>
+<div class="pictures" id="picture" style="display:none">
+
+    <div class="pictures_title">
+        <span class="pictures_name">景色：</span>
+        <span class="pictures_btn" id="btn0" onclick="locate('校园一角')">校园一角</span>
+        <span  class="pictures_btn" id="btn1" onclick="locate('时刻')">时刻</span>
+        <span  class="pictures_btn" id="btn2" onclick="locate('动物')">动物</span>
+        <br>
+        <span class="pictures_name">日常：</span>
+        <span  class="pictures_btn" id="btn3" onclick="locate('学习')">学习</span>
+        <span  class="pictures_btn" id="btn4" onclick="locate('课堂')">课堂</span>
+        <span  class="pictures_btn" id="btn5" onclick="locate('竞赛')">竞赛</span>
+        <span  class="pictures_btn" id="btn6" onclick="locate('美食')">美食</span>
+        <span  class="pictures_btn" id="btn7" onclick="locate('环保')">环保</span>
+        <span  class="pictures_btn" id="btn8" onclick="locate('活动')">活动</span>
+        <span  class="pictures_btn" id="btn9" onclick="locate('志愿')">志愿</span>
+        <span  class="pictures_btn" id="btn10" onclick="locate('科技')">科技</span>
+        <span  class="pictures_btn" id="btn11" onclick="locate('运动')">运动</span>
+        <span  class="pictures_btn" id="btn12" onclick="locate('小确幸')">小确幸</span>
+        <br>
+        <span class="pictures_name">节日：</span>
+        <span  class="pictures_btn" id="btn13" onclick="locate('元旦')">元旦</span>
+        <span  class="pictures_btn" id="btn14" onclick="locate('春节')">春节</span>
+        <span  class="pictures_btn" id="btn15" onclick="locate('元宵')">元宵</span>
+        <span  class="pictures_btn" id="btn16" onclick="locate('清明')">清明</span>
+        <span  class="pictures_btn" id="btn17" onclick="locate('青年节')">青年节</span>
+        <span  class="pictures_btn" id="btn18" onclick="locate('父亲节')">父亲节</span>
+        <span  class="pictures_btn" id="btn19" onclick="locate('母亲节')">母亲节</span>
+        <span  class="pictures_btn" id="btn20" onclick="locate('建党节')">建党节</span>
+        <span  class="pictures_btn" id="btn21" onclick="locate('建军节')">建军节</span>
+        <span  class="pictures_btn" id="btn22" onclick="locate('教师节')">教师节</span>
+        <span  class="pictures_btn" id="btn23" onclick="locate('中秋节')">中秋节</span>
+        <span  class="pictures_btn" id="btn24" onclick="locate('国庆节')">国庆节</span>
+        <span  class="pictures_btn" id="btn25" onclick="locate('感恩节')">感恩节</span>
+    </div>
+    <h1>图片管理</h1>
+    <div class="picture1" >
+        <ul class="ul1">
+            <li class="li_first1">
+                <img class="pics1" id="picture0" src="img/test.png">
+                <img class="back_btns1" src="img/back_btn.png">
+                <span class="title1" id="title0">节气</span>
+                <div class="click"><span id="click0">点击量:</span></div>
+                <div class="zan"><span class="pass_0" id="zan0">点赞量:</span></div>
+            </li>
+            <li >
+                <img class="pics1" id="picture1" src="img/test.png">
+                <img class="back_btns1" src="img/back_btn.png">
+                <span class="title1" id="title1">节气</span>
+                <div class="click"><span id="click1">点击量:</span></div>
+                <div class="zan"><span class="pass_0" id="zan1">点赞量:</span></div>
+            </li>
+            <li>
+                <img class="pics1" id="picture2" src="img/test.png">
+                <img class="back_btns1" src="img/back_btn.png">
+                <span class="title1" id="title2">节气</span>
+                <div class="click"><span id="click2">点击量:</span></div>
+                <div class="zan"><span class="pass_0" id="zan2">点赞量:</span></div>
+            </li>
+
+
+        </ul>
+        <ul class="ul1">
+            <li class="li_first1">
+                <img class="pics1" id="picture3" src="img/test.png">
+                <img class="back_btns1" src="img/back_btn.png">
+                <span class="title1" id="title3">节气</span>
+                <div class="click"><span id="click3">点击量:</span></div>
+                <div class="zan"><span class="pass_0" id="zan3">点赞量:</span></div>
+            </li>
+            <li>
+                <img class="pics1" id="picture4" src="img/test.png">
+                <img class="back_btns1" src="img/back_btn.png">
+                <span class="title1" id="title4">节气</span>
+                <div class="click"><span id="click4">点击量:</span></div>
+                <div class="zan"><span class="pass_0" id="zan4">点赞量:</span></div>
+            </li>
+            <li >
+                <img class="pics1" id="picture5" src="img/test.png">
+                <img class="back_btns1" src="img/back_btn.png">
+                <span class="title1" id="title5">节气</span>
+                <div class="click"><span id="click5">点击量:</span></div>
+                <div class="zan"><span class="pass_0" id="zan5">点赞量:</span></div>
+            </li>
+
+
+        </ul>
+        <ul class="ul1">
+            <li class="li_first1">
+                <img class="pics1" id="picture6" src="img/test.png">
+                <img class="back_btns1" src="img/back_btn.png">
+                <span class="title1" id="title6">节气</span>
+                <div class="click"><span id="click6">点击量:</span></div>
+                <div class="zan"><span class="pass_0" id="zan6">点赞量:</span></div>
+            </li>
+            <li >
+                <img class="pics1" id="picture7" src="img/test.png">
+                <img class="back_btns1" src="img/back_btn.png">
+                <span class="title1" id="title7">节气</span>
+                <div class="click"><span id="click7">点击量:</span></div>
+                <div class="zan"><span class="pass_0" id="zan7">点赞量:</span></div>
+            </li>
+            <li>
+                <img class="pics1" id="picture8" src="img/test.png">
+                <img class="back_btns1" src="img/back_btn.png">
+                <span class="title1" id="title8">节气</span>
+                <div class="click"><span id="click8">点击量:</span></div>
+                <div class="zan"><span class="pass_0" id="zan8">点赞量:</span></div>
+            </li>
+
+
+        </ul>
+        <ul class="ul1">
+            <li class="li_first1">
+                <img class="pics1" id="picture9" src="img/test.png">
+                <img class="back_btns1" src="img/back_btn.png">
+                <span class="title1" id="title9">节气</span>
+                <div class="click"><span id="click9">点击量:</span></div>
+                <div class="zan"><span class="pass_0"  id="zan9">点赞量:</span></div>
+            </li>
+            <li>
+                <img class="pics1" id="picture10" src="img/test.png">
+                <img class="back_btns1" src="img/back_btn.png">
+                <span class="title1" id="title10">节气</span>
+                <div class="click"><span id="click10">点击量:</span></div>
+                <div class="zan"><span class="pass_0"  id="zan10">点赞量:</span></div>
+            </li>
+            <li >
+                <img class="pics1" id="picture11" src="img/test.png">
+                <img class="back_btns1" src="img/back_btn.png">
+                <span class="title1" id="title11">节气</span>
+                <div class="click"><span id="click11">点击量:</span></div>
+                <div class="zan"><span class="pass_0" id="zan11">点赞量:</span></div>
+            </li>
+
+
+        </ul>
+
+
+    </div>
+    <div class="btns1">
+        <span onclick="picnextpage(1)">1</span>
+        <span onclick="picnextpage(2)">2</span>
+        <span onclick="picnextpage(3)">3</span>
+        <span onclick="picnextpage(4)">4</span>
+        <span onclick="picnextpage(5)">5</span>
+        <span onclick="picnextpage(6)">6</span>
+        <span onclick="picnextpage(7)">7</span>
+        <span onclick="picnextpage(8)">8</span>
+        <span onclick="picnextpage(9)">9</span>
+        <span onclick="picnextpage(10)">10</span>
+
+    </div>
+</div>
+<div class="user" id="user" style="display: none">
+    <h1>用户管理</h1>
+    <div class="main">
+        <table border="2" class="table">
+            <tbody>
+            <tr>
+                <td >学号</td>
+                <td>姓名</td>
+                <td>用户名</td>
+                <td>密码</td>
+                <td>操作</td>
+            </tr>
+            <tr id="tr0">
+                <td id="id0"></td>
+                <td id="name1_0"></td>
+                <td id="name2_0"></td>
+                <td id="pwd0"></td>
+                <td ><button  onclick="del(0)">删除</button></td>
+            </tr>
+            <tr id="tr1">
+                <td id="id1"></td>
+                <td id="name1_1"></td>
+                <td id="name2_1"></td>
+                <td id="pwd1"></td>
+                <td ><button  onclick="del(1)">删除</button></td>
+            </tr>
+            <tr id="tr2">
+                <td id="id2"></td>
+                <td id="name1_2"></td>
+                <td id="name2_2"></td>
+                <td id="pwd2"></td>
+                <td ><button  onclick="del(2)">删除</button></td>
+            </tr>
+            <tr id="tr3">
+                <td id="id3"></td>
+                <td id="name1_3"></td>
+                <td id="name2_3"></td>
+                <td id="pwd3"></td>
+                <td ><button  onclick="del(3)">删除</button></td>
+            </tr>
+            <tr id="tr4">
+                <td id="id4"></td>
+                <td id="name1_4"></td>
+                <td id="name2_4"></td>
+                <td id="pwd4"></td>
+                <td ><button  onclick="del(4)">删除</button></td>
+            </tr>
+            <tr id="tr5">
+                <td id="id5"></td>
+                <td id="name1_5"></td>
+                <td id="name2_5"></td>
+                <td id="pwd5"></td>
+                <td ><button  onclick="del(5)">删除</button></td>
+            </tr>
+            <tr id="tr6">
+                <td id="id6"></td>
+                <td id="name1_6"></td>
+                <td id="name2_6"></td>
+                <td id="pwd6"></td>
+                <td ><button  onclick="del(6)">删除</button></td>
+            </tr>
+            <tr id="tr7">
+                <td id="id7"></td>
+                <td id="name1_7"></td>
+                <td id="name2_7"></td>
+                <td id="pwd7"></td>
+                <td ><button  onclick="del(7)">删除</button></td>
+            </tr>
+            <tr id="tr8">
+                <td id="id8"></td>
+                <td id="name1_8"></td>
+                <td id="name2_8"></td>
+                <td id="pwd8"></td>
+                <td ><button  onclick="del(8)">删除</button></td>
+            </tr>
+            <tr id="tr9">
+                <td id="id9"></td>
+                <td id="name1_9"></td>
+                <td id="name2_9"></td>
+                <td id="pwd9"></td>
+                <td ><button  onclick="del(9)">删除</button></td>
+            </tr>
+            <tr id="tr10">
+                <td id="id10"></td>
+                <td id="name1_10"></td>
+                <td id="name2_10"></td>
+                <td id="pwd10"></td>
+                <td ><button  onclick="del(10)">删除</button></td>
+            </tr>
+            <tr id="tr11">
+                <td id="id11"></td>
+                <td id="name1_11"></td>
+                <td id="name2_11"></td>
+                <td id="pwd11"></td>
+                <td ><button  onclick="del(11)">删除</button></td>
+            </tr>
+            <tr id="tr12">
+                <td id="id12"></td>
+                <td id="name1_12"></td>
+                <td id="name2_12"></td>
+                <td id="pwd12"></td>
+                <td ><button  onclick="del(12)">删除</button></td>
+            </tr>
+            <tr id="tr13">
+                <td id="id13"></td>
+                <td id="name1_13"></td>
+                <td id="name2_13"></td>
+                <td id="pwd13"></td>
+                <td ><button  onclick="del(13)">删除</button></td>
+            </tr>
+            <tr id="tr14">
+                <td id="id14"></td>
+                <td id="name1_14"></td>
+                <td id="name2_14"></td>
+                <td id="pwd14"></td>
+                <td ><button  onclick="del(14)">删除</button></td>
+            </tr>
+            <tr id="tr15">
+                <td id="id15"></td>
+                <td id="name1_15"></td>
+                <td id="name2_15"></td>
+                <td id="pwd15"></td>
+                <td ><button  onclick="del(15)">删除</button></td>
+            </tr>
+            <tr id="tr16">
+                <td id="id16"></td>
+                <td id="name1_16"></td>
+                <td id="name2_16"></td>
+                <td id="pwd16"></td>
+                <td ><button  onclick="del(16)">删除</button></td>
+            </tr>
+            <tr id="tr17">
+                <td id="id17"></td>
+                <td id="name1_17"></td>
+                <td id="name2_17"></td>
+                <td id="pwd17"></td>
+                <td ><button  onclick="del(17)">删除</button></td>
+            </tr>
+            <tr id="tr18">
+                <td id="id18"></td>
+                <td id="name1_18"></td>
+                <td id="name2_18"></td>
+                <td id="pwd18"></td>
+                <td ><button  onclick="del(18)">删除</button></td>
+            </tr>
+            <tr id="tr19">
+                <td id="id19"></td>
+                <td id="name1_19"></td>
+                <td id="name2_19"></td>
+                <td id="pwd19"></td>
+                <td ><button  onclick="del(19)">删除</button></td>
+            </tr>
+
+
+
+            </tbody>
+        </table>
+    </div>
+    <div class="btns2">
+        <span onclick="usernextpage(1)">1</span>
+        <span onclick="usernextpage(2)">2</span>
+        <span onclick="usernextpage(3)">3</span>
+        <span onclick="usernextpage(4)">4</span>
+        <span onclick="usernextpage(5)">5</span>
+        <span onclick="usernextpage(6)">6</span>
+        <span onclick="usernextpage(7)">7</span>
+        <span onclick="usernextpage(8)">8</span>
+        <span onclick="usernextpage(9)">9</span>
+        <span onclick="usernextpage(10)">10</span>
+    </div>
+</div>
 </body>
-<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
-<!--<script type="text/javascript" src="js/examine.js"></script>-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/examine.js"></script>
 </html>

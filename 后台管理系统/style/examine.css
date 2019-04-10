@@ -116,3 +116,178 @@ margin-bottom: 4px;
 .li_first {
     margin-top: 5px;
 }
+
+.btns {
+
+    width: 200px;
+    margin:0 auto;
+    height: 25px;
+    background: rgba(129, 5, 10, 0.89);
+    border-radius: 5px;
+}
+
+.btns span{
+    color: white;
+    margin-left: 13px;
+    margin-right: 13px;
+
+}
+.btns span:hover {
+    cursor: pointer;
+}
+
+
+
+
+/*****************************************************************/
+/***********************图片管理***********************************/
+/*****************************************************************/
+
+.pictures_title{
+    background-color:rgba(0,0,0,0.3);
+    text-align: center;
+}
+.pictures_btn{
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.pictures_name {
+    color: wheat;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.pictures_btn:hover {
+    cursor: pointer;
+}
+
+
+
+.picture1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.ul1 {
+
+    width: 290px;
+    height: 470px;
+    background: #42494f;
+
+}
+.ul1 li {
+    display: inline-block;
+    background: white;
+    width: 280px;
+    height: 150px;
+    border-radius: 1em;
+    margin-bottom: 4px;
+
+    position: relative;
+}
+.pics1{
+    margin-top:13px;
+    width: 260px;
+    height: 100px;
+}
+.back_btns1 {
+    position: absolute;
+    left: 10px;
+    top: 88px;
+    opacity: 0.5;
+    width: 40px;
+}
+.title1 {
+    position: absolute;
+    left: 12px;
+    top: 88px;
+    color: #f2f2f2;
+
+}
+.zan {
+    position: absolute;
+    right: 15px;
+    background:  #04bafb;
+    border-radius: 5px;
+    top: 120px;
+    width: 120px;
+    color: #f2f2f2;
+}
+
+.li_first1 {
+    margin-top: 5px;
+}
+.click{
+    position: absolute;
+    left: 15px;
+    background:  #04bafb;
+    border-radius: 5px;
+    top: 120px;
+    width: 120px;
+    color: #f2f2f2;
+}
+
+
+.btns1 {
+
+    width: 410px;
+    margin:0 auto;
+    height: 25px;
+    background: rgba(129, 5, 10, 0.89);
+    border-radius: 5px;
+}
+
+.btns1 span{
+    color: white;
+    margin-left: 13px;
+    margin-right: 13px;
+
+}
+.btns1 span:hover {
+    cursor: pointer;
+}
+
+
+
+/*用户*/
+
+
+
+.main{
+
+}
+.main {
+    margin: 0 auto;
+    width: 800px;
+
+}
+.table{
+    color: white;
+    width: 1001px;
+    margin: 0 auto;
+    text-align: center;
+}
+.table td{
+    width: 200px;
+}
+
+.btns2 {
+
+    width: 410px;
+    margin:0 auto;
+    height: 25px;
+    background: rgba(129, 5, 10, 0.89);
+    border-radius: 5px;
+}
+
+.btns2 span{
+    color: white;
+    margin-left: 13px;
+    margin-right: 13px;
+
+}
+.btns2 span:hover {
+    cursor: pointer;
+}

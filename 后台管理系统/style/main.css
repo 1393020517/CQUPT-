@@ -1,6 +1,6 @@
 
 body {
-    background: dodgerblue;
+   background: url("../img/sakura.jpg") no-repeat;
 }
 h1 {
     font-size: 40px;
@@ -8,16 +8,21 @@ h1 {
     color: white;
     text-align: center;
     margin-top: 200px;
+    padding-top: 20px;
 }
 
+.signform_uppper{
+    width: 100%;
+    height: 500px;
+    background:rgba(200, 54, 54, 0.5);
 
+}
 /*登录表单*/
 .signform {
 
-    position: fixed;
-    background-color: white;
-    top: 20%;
-    left: 30%;
+
+
+   margin: 0 auto;
     width: 500px;
     height: 400px;
     border-radius: 1em;
@@ -27,17 +32,7 @@ h1 {
 #registerform {
     height: 450px;
 }
-.signclose {
-    cursor: pointer;
-    float: right;
-    overflow: hidden;
-    text-align: center;
-    position: relative;
-    height: 35px;
-    width: 35px;
-    margin-top: 10px;
-    margin-right: 10px;
-}
+
 .signinput {
     text-align: center;
     border-radius: 0.2em;
@@ -51,11 +46,11 @@ h1 {
     font-size: 26px;
 }
 .userdiv {
-    position: relative;
+
     margin-top: 80px;
 }
 .pwddiv {
-    position: relative;
+
     margin-top: 20px;
 }
 .postdiv {
@@ -70,10 +65,10 @@ h1 {
     border-radius: 0.4em;
     width: 280px;
     height: 45px;
-    background-color:#04bafb;
+    background-color:rgba(129,5,10,0.89);
 }
 .postdiv input:hover {
-    color: #229beb;
+    color: rgba(129,5,10,0.89);
 }
 
 

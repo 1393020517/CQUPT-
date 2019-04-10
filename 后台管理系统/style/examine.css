@@ -1,44 +1,118 @@
 
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
 body {
-    background: dodgerblue;
+    background: url("../img/sakura.jpg") no-repeat;
+    background-size: 100%;
+    height: 100%;
+
+    width: 100%;
+
+}
+
+.top {
+    position: relative;
+    background: rgba(129, 5, 10, 0.89);
+    height: 80px;
+    width: 100%;
+}
+
+.top img {
+    position: absolute;
+    top: 10px;
+    left: 350px;
+}
+
+.top img:hover {
+    cursor: pointer;
+}
+
+.top_list {
+
+    text-align: center;
+}
+
+.top_btns {
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: inline-block;
+    color: #5a0100;
+    font-size: 40px;
+}
+
+.top_btns:hover {
+    cursor: pointer;
+    color: white;
 }
 
 h1 {
+    margin-top: 10px;
     font-size: 40px;
     color: white;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
+}
+
+
+.picture {
+text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 .picture ul {
-    column-count:3;
-    text-align: center;
-}
-.picture ul li{
-    margin-top: 5px;
-}
-.picture  li p {
-    font-size: 20px;
-    color: white;
-}
-.picture ul li button:hover {
-    cursor: pointer;
-}
-.picture img {
-    width: 333px;
-    height: 200px;
-}
-.btns {
-    margin-top: 60px;
-    text-align: center;
-    margin-bottom: 100px;
-}
 
-.btn {
+    width: 220px;
+    height: 524px;
+    background: #42494f;
+
+}
+.picture ul li {
     display: inline-block;
-    width: 50px;
-    height: 50px;
-}
-.btns button:hover {
-    cursor: pointer;
+    background: white;
+    width: 218px;
+    height: 125px;
+    border-radius: 1em;
+margin-bottom: 4px;
 
+    position: relative;
+}
+.pics{
+    margin-top:13px;
+    width: 200px;
+    height: 100px;
+}
+.back_btns {
+    position: absolute;
+    left: 9px;
+    top: 88px;
+    opacity: 0.5;
+    width: 40px;
+}
+.title {
+    position: absolute;
+    left: 12px;
+    top: 88px;
+    color: #f2f2f2;
+
+}
+.pass {
+    position: absolute;
+    right: 9px;
+    background:  #04bafb;
+    border-radius: 5px;
+    top: 91px;
+    width: 40px;
+    color: #f2f2f2;
+}
+.pass:hover{
+    cursor: pointer;
+}
+.li_first {
+    margin-top: 5px;
 }

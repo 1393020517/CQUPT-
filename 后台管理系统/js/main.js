@@ -1,8 +1,11 @@
 
-
-/*登录弹窗*/
-
-
+/*********cookie******************/
+function setCookie(c_name,value,expireseconds){
+    var exdate=new Date();
+    exdate.setTime(exdate.getTime()+expireseconds * 1000);
+    document.cookie=c_name+ "=" +escape(value)+
+        ((expireseconds==null) ? "" : ";expires="+exdate.toGMTString())
+}
 
 
 
@@ -38,7 +41,7 @@ turn.onclick=function() {
 
                 if (data.status) {
 
-
+                    setCookie('cookie_name','jiasai',3600*2);
                     location = "./examine.html"/*待修改*/
                 }
                 else {

@@ -1,8 +1,40 @@
+/*****************cookie***************************/
+function getCookie(c_name) {
+    if (document.cookie.length > 0) {
+        c_start = document.cookie.indexOf(c_name + "=");
+        if (c_start != -1) {
+            c_start = c_start + c_name.length + 1;
+            c_end = document.cookie.indexOf(";", c_start);
+            if (c_end == -1) {
+                c_end = document.cookie.length;
+            }
+
+            return unescape(document.cookie.substring(c_start, c_end));
+        }
+    }
+
+    return "";
+}
+
+
+window.onload=function () {
+    var cookie=getCookie('cookie_name')
+    if(cookie===''){
+        location = "./main.html"
+    }
+}
+
+
+
 // /*页面加载*/
 
 function examine() {
     document.getElementById('user').style.display="none";
     document.getElementById('picture').style.display="none";
+    document.getElementById('exam').style.color = '#fff'
+    document.getElementById('pic').style.color = '#5a0100'
+    document.getElementById('users').style.color = '#5a0100'
+
     document.getElementById('examine').style.display="";
 
     $.ajax({
@@ -99,8 +131,9 @@ function picture() {
     document.getElementById('user').style.display="none";
     document.getElementById('examine').style.display="none";
     document.getElementById('picture').style.display="";
-
-
+    document.getElementById('pic').style.color = '#fff'
+    document.getElementById('exam').style.color = '#5a0100'
+    document.getElementById('users').style.color = '#5a0100'
 
 
 }
@@ -182,6 +215,7 @@ function picnextpage(number) {
 function del(number) {
     var src=document.getElementById('picture'+number).src
     document.getElementById('li'+number).style.display="none";
+
     $.ajax({
         url:"./php/index1.php",/*待修改*/
         type:"POST",
@@ -212,6 +246,9 @@ function user() {
     document.getElementById('examine').style.display="none";
     document.getElementById('picture').style.display="none";
     document.getElementById('user').style.display="";
+    document.getElementById('users').style.color = '#fff'
+    document.getElementById('pic').style.color = '#5a0100'
+    document.getElementById('exam').style.color = '#5a0100'
     $.ajax({
         url:"./php/index1.php",/*待修改*/
         type:"POST",

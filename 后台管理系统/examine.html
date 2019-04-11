@@ -9,9 +9,9 @@
 <div class="top">
     <img src="img/logo.png" class="logo">
     <div class="top_list">
-        <span class="top_btns" onclick="examine()">审核图片</span>
-        <span class="top_btns" onclick="picture()">图片管理</span>
-        <span class="top_btns" onclick="user()">用户管理</span>
+        <span class="top_btns" id="exam" onclick="examine()">审核图片</span>
+        <span class="top_btns" id="pic" onclick="picture()">图片管理</span>
+        <span class="top_btns" id="users" onclick="user()">用户管理</span>
     </div>
 </div>
 <div class="examine"  style="display: none" id="examine">
@@ -444,7 +444,7 @@
                 <td id="name1_15"></td>
                 <td id="name2_15"></td>
                 <td id="pwd15"></td>
-                <td ><button  class="userdel" onclick="userdel(15)">删除</button></td>
+                <td ><span  class="userdel" onclick="userdel(15)">删除</span></td>
             </tr>
             <tr id="tr16">
                 <td id="id16"></td>

@@ -21,6 +21,7 @@ body {
     width: 100%;
 }
 
+#exam:active{color: white}
 .top img {
     position: absolute;
     top: 10px;
@@ -37,12 +38,12 @@ body {
 }
 
 .top_btns {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 25px;
     margin-right: 25px;
     display: inline-block;
     color: #5a0100;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .top_btns:hover {
@@ -260,8 +261,12 @@ margin-bottom: 4px;
 }
 .main {
     margin: 0 auto;
-    width: 800px;
 
+
+
+}
+.main table {
+    background: wheat;
 }
 .table{
     color: white;

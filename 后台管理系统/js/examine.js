@@ -38,7 +38,7 @@ function examine() {
     document.getElementById('examine').style.display="";
 
     $.ajax({
-        url:"./php/index1.php",/*待修改*/
+        url:"./Php/delect.php",/*待修改*/
         type:"POST",
         dataType:"json",
         data:{
@@ -74,7 +74,7 @@ function pass_pic(number) {
     var src=pass_pic.src;
     var tip=pass_tip.innerHTML;
     $.ajax({
-        url:"./php/index1.php",/*待修改*/
+        url:"./Php/pass.php",/*待修改*/
         type:"POST",
         dataType:"json",
         data:{
@@ -100,7 +100,7 @@ function pass_pic(number) {
 /*转到某页*/
 function nextpage(number) {
     $.ajax({
-        url:"./php/index1.php",/*待修改*/
+        url:"./Php/delect.php",/*待修改*/
         type:"POST",
         dataType:"json",
         data:{
@@ -142,7 +142,7 @@ function locate(name) {
     datas=name;
 
     $.ajax({
-        url:"./php/index1.php",/*待修改*/
+        url:"./Php/gettemp.php",/*待修改*/
         type:"POST",
         dataType:"json",
         data:{
@@ -180,7 +180,7 @@ function picnextpage(number) {
     var url=window.location.href;
     var name = url.match(/\?key=(.*)/)[1];
     $.ajax({
-        url:"./php/index1.php",/*待修改*/
+        url:"./Php/gettemp.php",/*待修改*/
         type:"POST",
         dataType:"json",
         data:{
@@ -217,7 +217,7 @@ function del(number) {
     document.getElementById('li'+number).style.display="none";
 
     $.ajax({
-        url:"./php/index1.php",/*待修改*/
+        url:"./Php/gettemp.php",/*待修改*/
         type:"POST",
         dataType:"json",
         data:{
@@ -250,7 +250,7 @@ function user() {
     document.getElementById('pic').style.color = '#5a0100'
     document.getElementById('exam').style.color = '#5a0100'
     $.ajax({
-        url:"./php/index1.php",/*待修改*/
+        url:"./Php/getinfo.php",/*待修改*/
         type:"POST",
         dataType:"json",
         data:{
@@ -288,7 +288,7 @@ function user() {
 
 function usernextpage(number) {
     $.ajax({
-        url:"./php/index1.php",/*待修改*/
+        url:"./Php/getinfo.php",/*待修改*/
         type:"POST",
         dataType:"json",
         data:{
@@ -328,7 +328,7 @@ function userdel(number) {
     var user=document.getElementById('id'+number).innerHTML;
     document.getElementById('tr'+number).style.display="none";
     $.ajax({
-        url:"./php/index1.php",/*待修改*/
+        url:"./Php/getinfo.php",/*待修改*/
         type:"POST",
         dataType:"json",
         data:{

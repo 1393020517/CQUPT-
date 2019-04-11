@@ -28,7 +28,7 @@ turn.onclick=function() {
     else {
         $.ajax({
 
-            url:"./php/index1.php",/*待修改*/
+            url:"./Php/managerlog.php",/*待修改*/
             type:"POST",
             dataType:"json",
             data:{

@@ -291,3 +291,8 @@ margin-bottom: 4px;
 .btns2 span:hover {
     cursor: pointer;
 }
+
+
+.userdel:hover {
+    cursor: pointer;
+}

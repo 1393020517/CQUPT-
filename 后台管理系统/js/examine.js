@@ -284,3 +284,32 @@ function usernextpage(number) {
         }
     })
 }
+
+
+
+function userdel(number) {
+    var user=document.getElementById('id'+number).innerHTML;
+    document.getElementById('tr'+number).style.display="none";
+    $.ajax({
+        url:"./php/index1.php",/*待修改*/
+        type:"POST",
+        dataType:"json",
+        data:{
+            page:number,
+            id:user
+        },
+        success:function (data) {
+            if (data.status) {
+                alert('删除成功')
+            }
+            else {
+                alert('删除失败')
+            }
+
+        },
+        error:function () {
+            alert('无法连接服务器')
+        }
+    })
+
+}

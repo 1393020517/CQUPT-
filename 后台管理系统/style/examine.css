@@ -91,14 +91,14 @@ margin-bottom: 4px;
 .back_btns {
     position: absolute;
     left: 9px;
-    top: 88px;
+    top: 13px;
     opacity: 0.5;
     width: 40px;
 }
 .title {
     position: absolute;
     left: 12px;
-    top: 88px;
+    top: 13px;
     color: #f2f2f2;
 
 }
@@ -112,6 +112,19 @@ margin-bottom: 4px;
     color: #f2f2f2;
 }
 .pass:hover{
+    cursor: pointer;
+}
+
+.notpass {
+    position: absolute;
+    left: 9px;
+    background:  #04bafb;
+    border-radius: 5px;
+    top: 91px;
+    width: 60px;
+    color: #f2f2f2;
+}
+.notpass:hover{
     cursor: pointer;
 }
 .li_first {

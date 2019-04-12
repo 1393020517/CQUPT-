@@ -17,12 +17,12 @@ function getCookie(c_name) {
 }
 
 
-window.onload=function () {
-    var cookie=getCookie('cookie_name')
-    if(cookie===''){
-        location = "./main.html"
-    }
-}
+// window.onload=function () {
+//     var cookie=getCookie('cookie_name')
+//     if(cookie===''){
+//         location = "./main.html"
+//     }
+// }
 
 
 
@@ -125,6 +125,35 @@ function nextpage(number) {
         }
     })
 }
+
+
+function examdel(number) {
+    var src=document.getElementById('pic'+number).src
+
+
+    $.ajax({
+        url:"./Php/gettemp.php",/*待修改*/
+        type:"POST",
+        dataType:"json",
+        data:{
+            src:src
+        },
+        success:function (data) {
+            if (data.status) {
+                alert('删除成功')
+            }
+            else {
+                alert('删除失败')
+            }
+
+        },
+        error:function () {
+            alert('无法连接服务器')
+        }
+    })
+
+}
+
 
 /*****************图片管理*****************************/
 function picture() {

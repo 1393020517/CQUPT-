@@ -38,7 +38,7 @@ function examine() {
     document.getElementById('examine').style.display="";
 
     $.ajax({
-        url:"./Php/delect.php",/*待修改*/
+        url:"./Php/gettemp.php",/*待修改*/
         type:"POST",
         dataType:"json",
         data:{
@@ -100,7 +100,7 @@ function pass_pic(number) {
 /*转到某页*/
 function nextpage(number) {
     $.ajax({
-        url:"./Php/delect.php",/*待修改*/
+        url:"./Php/gettemp.php",/*待修改*/
         type:"POST",
         dataType:"json",
         data:{
@@ -132,7 +132,7 @@ function examdel(number) {
 
 
     $.ajax({
-        url:"./Php/gettemp.php",/*待修改*/
+        url:"./Php/delete.php",/*待修改*/
         type:"POST",
         dataType:"json",
         data:{
@@ -171,7 +171,7 @@ function locate(name) {
     datas=name;
 
     $.ajax({
-        url:"./Php/gettemp.php",/*待修改*/
+        url:"./Php/getformal.php",/*待修改*/
         type:"POST",
         dataType:"json",
         data:{
@@ -209,7 +209,7 @@ function picnextpage(number) {
     var url=window.location.href;
     var name = url.match(/\?key=(.*)/)[1];
     $.ajax({
-        url:"./Php/gettemp.php",/*待修改*/
+        url:"./Php/getformal.php",/*待修改*/
         type:"POST",
         dataType:"json",
         data:{
@@ -246,7 +246,7 @@ function del(number) {
     document.getElementById('li'+number).style.display="none";
 
     $.ajax({
-        url:"./Php/gettemp.php",/*待修改*/
+        url:"./Php/delete.php",/*待修改*/
         type:"POST",
         dataType:"json",
         data:{
@@ -352,30 +352,30 @@ function usernextpage(number) {
 }
 
 
-
-function userdel(number) {
-    var user=document.getElementById('id'+number).innerHTML;
-    document.getElementById('tr'+number).style.display="none";
-    $.ajax({
-        url:"./Php/getinfo.php",/*待修改*/
-        type:"POST",
-        dataType:"json",
-        data:{
-            page:number,
-            id:user
-        },
-        success:function (data) {
-            if (data.status) {
-                alert('删除成功')
-            }
-            else {
-                alert('删除失败')
-            }
-
-        },
-        error:function () {
-            alert('无法连接服务器')
-        }
-    })
-
-}
+//
+// function userdel(number) {
+//     var user=document.getElementById('id'+number).innerHTML;
+//     document.getElementById('tr'+number).style.display="none";
+//     $.ajax({
+//         url:"./Php/delete.php",/*待修改*/
+//         type:"POST",
+//         dataType:"json",
+//         data:{
+//             page:number,
+//             id:user
+//         },
+//         success:function (data) {
+//             if (data.status) {
+//                 alert('删除成功')
+//             }
+//             else {
+//                 alert('删除失败')
+//             }
+//
+//         },
+//         error:function () {
+//             alert('无法连接服务器')
+//         }
+//     })
+//
+// }

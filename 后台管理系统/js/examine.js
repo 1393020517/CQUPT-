@@ -17,12 +17,12 @@ function getCookie(c_name) {
 }
 
 
-// window.onload=function () {
-//     var cookie=getCookie('cookie_name')
-//     if(cookie===''){
-//         location = "./main.html"
-//     }
-// }
+window.onload=function () {
+    var cookie=getCookie('cookie_name')
+    if(cookie===''){
+        location = "./main.html"
+    }
+}
 
 
 
@@ -47,13 +47,13 @@ function examine() {
         success:function (data) {
             for(i=0;i<data.length;i++){
                 var pic=document.getElementById('pic'+i);
-                pic.src=data[i].src[0]
+                pic.src=data[i].src
             }
 
             for(i=0;i<data.length;i++){
 
                 var tip=document.getElementById('tip'+1);
-                tip.innerHTML=data[i].tip[0]
+                tip.innerHTML=data[i].title
 
 
             }
@@ -109,13 +109,13 @@ function nextpage(number) {
         success:function (data) {
             for(i=0;i<data.length;i++){
                 var pic=document.getElementById('pic'+i);
-                pic.src=data[i].src[0]
+                pic.src=data[i].src
             }
 
             for(i=0;i<data.length;i++){
 
                 var tip=document.getElementById('tip'+1);
-                tip.innerHTML=data[i].tip[0]
+                tip.innerHTML=data[i].title
 
 
             }
@@ -164,6 +164,42 @@ function picture() {
     document.getElementById('exam').style.color = '#5a0100'
     document.getElementById('users').style.color = '#5a0100'
 
+    $.ajax({
+        url:"./Php/getformal.php",/*待修改*/
+        type:"POST",
+        dataType:"json",
+        data:{
+            page:1,
+
+        },
+        success:function (data) {
+            for(i=0;i<data.length;i++){
+                var pic=document.getElementById('picture'+i);
+                pic.src=data[i].src
+            }
+
+            for(i=0;i<data.length;i++){
+
+                var click=document.getElementById('click'+i);
+                click.innerHTML='点击量'+data[i].click
+            }
+            for(i=0;i<data.length;i++){
+
+                var zan=document.getElementById('zan'+i);
+                zan.innerHTML='点赞量'+data[i].zan
+            }
+            for(i=0;i<data.length;i++){
+
+                var title=document.getElementById('title'+i);
+                title.innerHTML=data[i].title
+            }
+
+        },
+        error:function () {
+            alert('无法连接服务器')
+        }
+    })
+
 
 }
 
@@ -179,21 +215,23 @@ function locate(name) {
             title:datas
         },
         success:function (data) {
+            console.log(data)
+            console.log(data)
             window.location.href ="./examine.html?key="+datas;/**examine修改名字时注意***/
             for(i=0;i<data.length;i++){
                 var pic=document.getElementById('picture'+i);
-                pic.src=data[i].src[0]
+                pic.src=data[i].src
             }
 
             for(i=0;i<data.length;i++){
 
                 var click=document.getElementById('click'+i);
-                click.innerHTML='点击量'+data[i].tip[0]
+                click.innerHTML='点击量'+data[i].title
             }
             for(i=0;i<data.length;i++){
 
                 var zan=document.getElementById('zan'+i);
-                zan.innerHTML='点赞量'+data[i].tip[0]
+                zan.innerHTML='点赞量'+data[i].title
             }
         },
         error:function () {
@@ -201,6 +239,8 @@ function locate(name) {
         }
     })
 }
+
+
 
 
 

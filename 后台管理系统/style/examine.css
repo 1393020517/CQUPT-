@@ -220,6 +220,22 @@ margin-bottom: 4px;
     color: #f2f2f2;
 
 }
+.del{
+    position: absolute;
+    right: 13px;
+    top: 90px;
+    color: #f2f2f2;
+}
+.del:hover{
+    cursor: pointer;
+}
+.back_btns2 {
+    position: absolute;
+    right: 10px;
+    top: 88px;
+    opacity: 0.5;
+    width: 40px;
+}
 .zan {
     position: absolute;
     right: 15px;

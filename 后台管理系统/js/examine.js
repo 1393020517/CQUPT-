@@ -17,12 +17,15 @@ function getCookie(c_name) {
 }
 
 
-window.onload=function () {
-    var cookie=getCookie('cookie_name')
-    if(cookie===''){
-        location = "./main.html"
-    }
-}
+//window.onload=function () {
+//    var cookie=getCookie('cookie_name')
+//    if(cookie===''){
+//        location = "./main.html"
+//    }
+ //   else{
+ //       examine()
+ //   }
+//}
 
 
 
@@ -143,9 +146,12 @@ function examdel(number) {
                 alert('删除成功')
             }
             else {
-                alert('删除失败')
+                if (data.indexOf('default')!=-1) {
+                    alert('不要删除默认图片哦！');
+                } else {
+                    alert('删除失败')
+                }
             }
-
         },
         error:function () {
             alert('无法连接服务器')
@@ -164,41 +170,41 @@ function picture() {
     document.getElementById('exam').style.color = '#5a0100'
     document.getElementById('users').style.color = '#5a0100'
 
-    $.ajax({
-        url:"./Php/getformal.php",/*待修改*/
-        type:"POST",
-        dataType:"json",
-        data:{
-            page:1,
-
-        },
-        success:function (data) {
-            for(i=0;i<data.length;i++){
-                var pic=document.getElementById('picture'+i);
-                pic.src=data[i].src
-            }
-
-            for(i=0;i<data.length;i++){
-
-                var click=document.getElementById('click'+i);
-                click.innerHTML='点击量'+data[i].click
-            }
-            for(i=0;i<data.length;i++){
-
-                var zan=document.getElementById('zan'+i);
-                zan.innerHTML='点赞量'+data[i].zan
-            }
-            for(i=0;i<data.length;i++){
-
-                var title=document.getElementById('title'+i);
-                title.innerHTML=data[i].title
-            }
-
-        },
-        error:function () {
-            alert('无法连接服务器')
-        }
-    })
+    // $.ajax({
+    //     url:"./Php/getformal.php",/*待修改*/
+    //     type:"POST",
+    //     dataType:"json",
+    //     data:{
+    //         page:1,
+    //
+    //     },
+    //     success:function (data) {
+    //         for(i=0;i<data.length;i++){
+    //             var pic=document.getElementById('picture'+i);
+    //             pic.src=data[i].src
+    //         }
+    //
+    //         for(i=0;i<data.length;i++){
+    //
+    //             var click=document.getElementById('click'+i);
+    //             click.innerHTML='点击量'+data[i].click
+    //         }
+    //         for(i=0;i<data.length;i++){
+    //
+    //             var zan=document.getElementById('zan'+i);
+    //             zan.innerHTML='点赞量'+data[i].zan
+    //         }
+    //         for(i=0;i<data.length;i++){
+    //
+    //             var title=document.getElementById('title'+i);
+    //             title.innerHTML=data[i].title
+    //         }
+    //
+    //     },
+    //     error:function () {
+    //         alert('无法连接服务器')
+    //     }
+    // })
 
 
 }
@@ -215,9 +221,14 @@ function locate(name) {
             title:datas
         },
         success:function (data) {
-            console.log(data)
-            console.log(data)
+
             window.location.href ="./examine.html?key="+datas;/**examine修改名字时注意***/
+            document.getElementById('user').style.display="none";
+            document.getElementById('examine').style.display="none";
+            document.getElementById('picture').style.display="";
+            document.getElementById('pic').style.color = '#fff'
+            document.getElementById('exam').style.color = '#5a0100'
+            document.getElementById('users').style.color = '#5a0100'
             for(i=0;i<data.length;i++){
                 var pic=document.getElementById('picture'+i);
                 pic.src=data[i].src
@@ -246,8 +257,15 @@ function locate(name) {
 
 /*转到某页*/
 function picnextpage(number) {
+
     var url=window.location.href;
     var name = url.match(/\?key=(.*)/)[1];
+    document.getElementById('user').style.display="none";
+    document.getElementById('examine').style.display="none";
+    document.getElementById('picture').style.display="";
+    document.getElementById('pic').style.color = '#fff'
+    document.getElementById('exam').style.color = '#5a0100'
+    document.getElementById('users').style.color = '#5a0100'
     $.ajax({
         url:"./Php/getformal.php",/*待修改*/
         type:"POST",
@@ -283,10 +301,10 @@ function picnextpage(number) {
 
 function del(number) {
     var src=document.getElementById('picture'+number).src
-    document.getElementById('li'+number).style.display="none";
+
 
     $.ajax({
-        url:"./Php/delete.php",/*待修改*/
+        url:"./Php/delete_formal.php",/*待修改*/
         type:"POST",
         dataType:"json",
         data:{
@@ -296,6 +314,7 @@ function del(number) {
         success:function (data) {
             if (data.status) {
                 alert('删除成功')
+                document.getElementById('li'+number).style.display="none";
             }
             else {
                 alert('删除失败')
@@ -326,24 +345,25 @@ function user() {
             page:1,
         },
         success:function (data) {
+            // console.log(data)
             for(i=0;i<data.length;i++){
                 var id=document.getElementById('id'+i);
-                id.innerText=data[i].id[0]
+                id.innerText=data[i].id
             }
 
-            for(i=0;i<data.length;i++){
-
-                var name1=document.getElementById('name1_'+i);
-                name1.innerHTML=data[i].name1[0]
-            }
+            // for(i=0;i<data.length;i++){
+            //
+            //     var name1=document.getElementById('name1_'+i);
+            //     name1.innerHTML=data[i].name1
+            // }
             for(i=0;i<data.length;i++){
 
                 var name2=document.getElementById('name2_'+i);
-                name2.innerHTML=data[i].name2[0]
+                name2.innerHTML=data[i].name2
             }
             for(i=0;i<data.length;i++){
                 var pwd=document.getElementById('pwd'+i);
-                pwd.innerText=data[i].pwd[0]
+                pwd.innerText=data[i].pwd
             }
         },
         error:function () {
@@ -367,22 +387,22 @@ function usernextpage(number) {
         success:function (data) {
             for(i=0;i<data.length;i++){
                 var id=document.getElementById('id'+i);
-                id.innerText=data[i].id[0]
+                id.innerText=data[i].id
             }
 
-            for(i=0;i<data.length;i++){
-
-                var name1=document.getElementById('name1_'+i);
-                name1.innerHTML=data[i].name1[0]
-            }
+            // for(i=0;i<data.length;i++){
+            //
+            //     var name1=document.getElementById('name1_'+i);
+            //     name1.innerHTML=data[i].name1
+            // }
             for(i=0;i<data.length;i++){
 
                 var name2=document.getElementById('name2_'+i);
-                name2.innerHTML=data[i].name2[0]
+                name2.innerHTML=data[i].name2
             }
             for(i=0;i<data.length;i++){
                 var pwd=document.getElementById('pwd'+i);
-                pwd.innerText=data[i].pwd[0]
+                pwd.innerText=data[i].pwd
             }
         },
         error:function () {

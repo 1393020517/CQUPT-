@@ -1,0 +1,226 @@
+
+body{
+
+
+    margin: 0 auto;
+}
+
+img {
+    border: none
+}
+
+li {
+    list-style: none
+}
+
+
+
+
+/**********导航栏***************/
+.layui-nav{
+    position: relative;
+    text-align: center;
+}
+.layui-nav-item a{
+    font-size: 20px;
+
+}
+#logo{
+    top: 8%;
+    position: absolute;
+    left: 15%;
+}
+.about:hover{
+    cursor: pointer;
+}
+/**********导航栏***************/
+
+/********审核页面*************/
+.examine{
+    width:1100px;
+    height: 800px;
+    margin: 0 auto;
+}
+.examine_main{
+    width:1040px;
+  height: 650px;
+    margin: 0 auto;
+
+
+}
+
+.examine_content{
+
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: center;
+    width: 250px;
+
+
+}
+.examine_pictures{
+
+    margin-top: 10px;
+    width: 250px;
+    position: relative;
+    height: 200px;
+    border-radius: 1em;
+    box-shadow:1px 1.5px 5px #b2b2b2;
+
+}
+.examine_picture{
+
+    margin-top: 10px;
+    height: 150px;
+    width: 230px;
+}
+.examine_title{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    background:#1da3f5 ;
+    color: #f2f2f2;
+}
+.examine_pass{
+    right: 80px;
+    position: absolute;
+ bottom: 5px;
+}
+.examine_unpass{
+    right: 10px;
+    position: absolute;
+    bottom: 5px;
+}
+#examine_page{
+
+    text-align: center;
+}
+
+
+
+/**************图片管理**********************/
+
+.layui-field-title legend{
+   text-align: center;
+    color: #1da3f5;
+}
+
+.manager{
+    width:1100px;
+
+    margin: 0 auto;
+}
+.manager_main{
+
+    width:1040px;
+    height: 700px;
+    margin: 0 auto;
+
+
+
+}
+
+.manager_content{
+
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: center;
+    width: 250px;
+
+
+}
+.manager_pictures{
+
+    margin-top: 10px;
+    width: 250px;
+    position: relative;
+    height: 200px;
+    border-radius: 1em;
+    box-shadow:1px 1.5px 5px #b2b2b2;
+
+}
+.manager_picture{
+
+    margin-top: 10px;
+    height: 150px;
+    width: 230px;
+}
+.manager_title{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    background:#1da3f5 ;
+    color: #f2f2f2;
+}
+.manager_nice{
+    position: absolute;
+    left: 83px;
+    bottom: 9px;
+    width: 40px;
+    height: 18px;
+    color: #cccccc;
+}
+.manager_click{
+    position: absolute;
+    right: 57px;
+    bottom:9px;
+    color: #cccccc;
+    width: 40px;
+    height: 18px;
+}
+.manager_pass{
+    right: 80px;
+    position: absolute;
+    bottom: 5px;
+}
+.manager_unpass{
+    right: 10px;
+    position: absolute;
+    bottom: 5px;
+}
+#manager_page{
+
+    text-align: center;
+}
+.nice_picture{
+    position: absolute;
+    bottom: 5px;
+    left: 60px;
+}
+.click_picture {
+    position: absolute;
+    bottom: 5px;
+    right: 95px;
+}
+
+
+
+/***********************用户*******************************/
+.user{
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+
+/*帮助*/
+
+/*************************帮助*****************************/
+.help{
+    padding-bottom: 20px;
+    width: 500px;
+    margin: 0 auto;
+    border: 0;
+}
+
+.help div{
+    color: #0C0C0C;
+}

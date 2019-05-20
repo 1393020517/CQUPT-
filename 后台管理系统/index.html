@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>重邮图库</title>
+    <link rel="stylesheet" href="./css/layui.css"  media="all">
+    <link rel="stylesheet" href="./css/index.css"  media="all">
+</head>
+<body>
+<div class="top">
+    <ul class="layui-nav layui-bg-blue" id="navs">
+        <li><img src="img/logo.png" id="logo"></li>
+        <li class="layui-nav-item" id="review_pic"><a href="javascript:review_pic();">审核图片</a></li>
+        <li class="layui-nav-item" id="pic_management"><a href="javascript:manager_pic();">图片管理</a></li>
+        <li class="layui-nav-item" id="user_list"><a href="javascript:user();">用户列表</a></li>
+        <li class="layui-nav-item" id="to_help"><a href="javascript:help();">帮助</a></li>
+        <li class="layui-nav-item" id="about"><a data-method="notice" class="about">关于</a></li>
+
+    </ul>
+</div>
+<!--图片审核-->
+<div class="examine"  id="examine">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+        <legend>图片审核</legend>
+    </fieldset>
+    <div class="layui-row examine_main">
+
+        <div class="layui-col-md3 examine_content" >
+            <div class="examine_pictures">
+                <img src="./img/test.jpg "  alt="" class="examine_picture">
+                <span class="examine_title">节气</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_pass"  onclick="pass(0)">通过</button>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_unpass" onclick="unpass(0)">不通过</button>
+            </div>
+            <div class="examine_pictures">
+                <img src="./img/test.jpg "  alt="" class="examine_picture">
+                <span class="examine_title">节气</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_pass"  onclick="pass(1)">通过</button>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_unpass" onclick="unpass(1)">不通过</button>
+            </div>
+            <div class="examine_pictures" >
+                <img src="./img/test.jpg "  alt="" class="examine_picture">
+                <span class="examine_title">节气</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_pass"  onclick="pass(2)">通过</button>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_unpass" onclick="unpass(2)">不通过</button>
+            </div>
+
+
+        </div>
+        <div class="layui-col-md3 examine_content" >
+            <div class="examine_pictures" >
+                <img src="./img/test.jpg "  alt="" class="examine_picture">
+                <span class="examine_title">节气</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_pass"  onclick="pass(3)">通过</button>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_unpass" onclick="unpass(3)">不通过</button>
+            </div>
+            <div class="examine_pictures" >
+                <img src="./img/test.jpg "  alt="" class="examine_picture">
+                <span class="examine_title">节气</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_pass"  onclick="pass(4)">通过</button>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_unpass" onclick="unpass(4)">不通过</button>
+            </div>
+            <div class="examine_pictures" >
+                <img src="./img/test.jpg "  alt="" class="examine_picture">
+                <span class="examine_title">节气</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_pass"  onclick="pass(5)">通过</button>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_unpass" onclick="unpass(5)">不通过</button>
+            </div>
+
+
+        </div>
+        <div class="layui-col-md3 examine_content" >
+            <div class="examine_pictures" id="examine_pic6">
+                <img src="./img/test.jpg "  alt="" class="examine_picture">
+                <span class="examine_title">节气</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_pass"  onclick="pass(6)">通过</button>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_unpass" onclick="unpass(6)">不通过</button>
+            </div>
+            <div class="examine_pictures"  >
+                <img src="./img/test.jpg "  alt="" class="examine_picture">
+                <span class="examine_title">节气</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_pass"  onclick="pass(7)">通过</button>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_unpass" onclick="unpass(7)">不通过</button>
+            </div>
+            <div class="examine_pictures">
+                <img src="./img/test.jpg "  alt="" class="examine_picture">
+                <span class="examine_title">节气</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_pass"  onclick="pass(8)">通过</button>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_unpass" onclick="unpass(8)">不通过</button>
+            </div>
+
+
+        </div>
+        <div class="layui-col-md3 examine_content">
+            <div class="examine_pictures">
+                <img src="./img/test.jpg "  alt="" class="examine_picture">
+                <span class="examine_title">节气</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_pass" onclick="pass(9)">通过</button>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_unpass" onclick="unpass(9)">不通过</button>
+            </div>
+            <div class="examine_pictures">
+                <img src="./img/test.jpg "  alt="" class="examine_picture">
+                <span class="examine_title">节气</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_pass"  onclick="pass(10)">通过</button>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_unpass" onclick="unpass(10)">不通过</button>
+            </div>
+            <div class="examine_pictures">
+                <img src="./img/test.jpg "  alt="" class="examine_picture">
+                <span class="examine_title">节气</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_pass"  onclick="pass(11)">通过</button>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal examine_unpass" onclick="unpass(11)">不通过</button>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+    <div id="examine_page"></div>
+
+</div>
+<!--图片管理-->
+<div class="manager" style="display: none" id="manager">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+        <legend>图片管理</legend>
+    </fieldset>
+    <div class="layui-row manager_main">
+        <div class="layui-col-md3 manager_content" >
+            <div class="manager_pictures site-doc-icon site-doc-anim">
+                <img src="./img/test.jpg "  alt="" class="manager_picture">
+                <span class="manager_title layui-anim" data-anim="layui-anim-up">节气</span>
+                <img src="img/nice.png" alt="" class="nice_picture">
+                <span class="manager_nice">666</span>
+                <img src="img/click.png" alt="" class="click_picture">
+                <span class="manager_click">666</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal manager_unpass" onclick="manager_del(0)">删除</button>
+            </div>
+            <div class="manager_pictures site-doc-icon site-doc-anim">
+                <img src="./img/test.jpg "  alt="" class="manager_picture">
+                <span class="manager_title layui-anim" data-anim="layui-anim-up">节气</span>
+                <img src="img/nice.png" alt="" class="nice_picture">
+                <span class="manager_nice">666</span>
+                <img src="img/click.png" alt="" class="click_picture">
+                <span class="manager_click">666</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal manager_unpass" onclick="manager_del(1)">删除</button>
+            </div>
+            <div class="manager_pictures site-doc-icon site-doc-anim">
+                <img src="./img/test.jpg "  alt="" class="manager_picture">
+                <span class="manager_title layui-anim" data-anim="layui-anim-up">节气</span>
+                <img src="img/nice.png" alt="" class="nice_picture">
+                <span class="manager_nice">666</span>
+                <img src="img/click.png" alt="" class="click_picture">
+                <span class="manager_click">666</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal manager_unpass" onclick="manager_del(2)">删除</button>
+            </div>
+        </div>
+        <div class="layui-col-md3 manager_content" >
+            <div class="manager_pictures site-doc-icon site-doc-anim">
+                <img src="./img/test.jpg "  alt="" class="manager_picture">
+                <span class="manager_title layui-anim" data-anim="layui-anim-up">节气</span>
+                <img src="img/nice.png" alt="" class="nice_picture">
+                <span class="manager_nice">666</span>
+                <img src="img/click.png" alt="" class="click_picture">
+                <span class="manager_click">666</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal manager_unpass" onclick="manager_del(3)">删除</button>
+            </div>
+            <div class="manager_pictures site-doc-icon site-doc-anim">
+                <img src="./img/test.jpg "  alt="" class="manager_picture">
+                <span class="manager_title layui-anim" data-anim="layui-anim-up">节气</span>
+                <img src="img/nice.png" alt="" class="nice_picture">
+                <span class="manager_nice">666</span>
+                <img src="img/click.png" alt="" class="click_picture">
+                <span class="manager_click">666</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal manager_unpass" onclick="manager_del(4)">删除</button>
+            </div>
+            <div class="manager_pictures site-doc-icon site-doc-anim">
+                <img src="./img/test.jpg "  alt="" class="manager_picture">
+                <span class="manager_title layui-anim" data-anim="layui-anim-up">节气</span>
+                <img src="img/nice.png" alt="" class="nice_picture">
+                <span class="manager_nice">666</span>
+                <img src="img/click.png" alt="" class="click_picture">
+                <span class="manager_click">666</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal manager_unpass" onclick="manager_del(5)">删除</button>
+            </div>
+        </div>
+        <div class="layui-col-md3 manager_content" >
+            <div class="manager_pictures site-doc-icon site-doc-anim">
+                <img src="./img/test.jpg "  alt="" class="manager_picture">
+                <span class="manager_title layui-anim" data-anim="layui-anim-up">节气</span>
+                <img src="img/nice.png" alt="" class="nice_picture">
+                <span class="manager_nice">666</span>
+                <img src="img/click.png" alt="" class="click_picture">
+                <span class="manager_click">666</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal manager_unpass" onclick="manager_del(6)">删除</button>
+            </div>
+            <div class="manager_pictures site-doc-icon site-doc-anim">
+                <img src="./img/test.jpg "  alt="" class="manager_picture">
+                <span class="manager_title layui-anim" data-anim="layui-anim-up">节气</span>
+                <img src="img/nice.png" alt="" class="nice_picture">
+                <span class="manager_nice">666</span>
+                <img src="img/click.png" alt="" class="click_picture">
+                <span class="manager_click">666</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal manager_unpass" onclick="manager_del(7)">删除</button>
+            </div>
+            <div class="manager_pictures site-doc-icon site-doc-anim">
+                <img src="./img/test.jpg "  alt="" class="manager_picture">
+                <span class="manager_title layui-anim" data-anim="layui-anim-up">节气</span>
+                <img src="img/nice.png" alt="" class="nice_picture">
+                <span class="manager_nice">666</span>
+                <img src="img/click.png" alt="" class="click_picture">
+                <span class="manager_click">666</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal manager_unpass" onclick="manager_del(8)">删除</button>
+            </div>
+        </div>
+        <div class="layui-col-md3 manager_content" >
+            <div class="manager_pictures site-doc-icon site-doc-anim">
+                <img src="./img/test.jpg "  alt="" class="manager_picture">
+                <span class="manager_title layui-anim" data-anim="layui-anim-up">节气</span>
+                <img src="img/nice.png" alt="" class="nice_picture">
+                <span class="manager_nice">666</span>
+                <img src="img/click.png" alt="" class="click_picture">
+                <span class="manager_click">666</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal manager_unpass" onclick="manager_del(9)">删除</button>
+            </div>
+            <div class="manager_pictures site-doc-icon site-doc-anim">
+                <img src="./img/test.jpg "  alt="" class="manager_picture">
+                <span class="manager_title layui-anim" data-anim="layui-anim-up">节气</span>
+                <img src="img/nice.png" alt="" class="nice_picture">
+                <span class="manager_nice">666</span>
+                <img src="img/click.png" alt="" class="click_picture">
+                <span class="manager_click">666</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal manager_unpass" onclick="manager_del(10)">删除</button>
+            </div>
+            <div class="manager_pictures site-doc-icon site-doc-anim">
+                <img src="./img/test.jpg "  alt="" class="manager_picture">
+                <span class="manager_title layui-anim" data-anim="layui-anim-up">节气</span>
+                <img src="img/nice.png" alt="" class="nice_picture">
+                <span class="manager_nice">666</span>
+                <img src="img/click.png" alt="" class="click_picture">
+                <span class="manager_click">666</span>
+                <button class="layui-btn layui-btn-sm layui-btn layui-btn-normal manager_unpass" onclick="manager_del(11)">删除</button>
+            </div>
+        </div>
+
+
+
+        <div id="manager_page"></div>
+
+
+
+    </div>
+
+</div>
+<!--用户-->
+<div class="user" style="display: none" id="user">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+        <legend>用户列表</legend>
+    </fieldset>
+    <table class="layui-hide " id="user_table"></table>
+</div>
+
+<!--帮助-->
+<div class="help" id="help" style="display: none">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+        <legend>帮助</legend>
+    </fieldset>
+    <div class="layui-collapse" >
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title">用户</h2>
+            <div class="layui-colla-content layui-show">（1）登录注册：您可以通过账号和密码来登录；您的账号就是您的学号，默认密码为“123456”。<br>
+                （2）变更密码：如果您希望修改密码，可以在登录框中进行修改哦。<br>
+                （3）收藏夹：在注册登录后点击页面右上角“收藏夹”按钮，可以查看收藏夹。<br></div>
+        </div>
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title">图片搜索</h2>
+            <div class="layui-colla-content layui-show">（1） 您可以在首页下方的搜索框中，根据标签来搜索。<br>
+                （2） 在搜索页面，您可以为喜爱的图片点赞，也可以勾选图片，把它放进您的收藏夹。<br></div>
+        </div>
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title">图片上传</h2>
+            <div class="layui-colla-content layui-show"> （1） 您可以点击“上传图片”，分享您的图片。<br>
+                （2） 为您的图片加上标签吧。<br></div>
+        </div>
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title">BUG反馈</h2>
+            <div class="layui-colla-content layui-show">联系我们: QQ: 1393020517 or 1103923008</div>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/layui.all.js" charset="utf-8"></script>
+<script src="js/index.js" charset="utf-8"></script>
+
+</html>

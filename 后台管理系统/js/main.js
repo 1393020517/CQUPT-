@@ -19,13 +19,13 @@ function getCookie(c_name) {
     return "";
 }
 
-window.onload=function () {
-
-    var cookie=getCookie('CQUPT_pictures_manager');
-    if(cookie==='' ){
-        location = "./login.html"
-    }
-};
+// window.onload=function () {
+//
+//     var cookie=getCookie('CQUPT_pictures_manager');
+//     if(cookie==='' ){
+//         location = "./login.html"
+//     }
+// };
 
 
 
@@ -364,7 +364,7 @@ layui.use('table', function(){
                     ,btn: ['关闭']
                     ,btnAlign: 'c'
                     ,moveType: 1 //拖拽模式，0或者1
-                    ,content: '<div style="padding: 50px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;">By：重邮e站<br>^_^<br>layui重构</div>'
+                    ,content: '<div style="padding: 50px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;">By：重邮e站<br>^_^<br><a href="https://github.com/1393020517/CQUPTpictures" style="color: #1da3f5">Github</a></div>'
                     ,success: function(layero){
                         var btn = layero.find('.about');
                         btn.find('.layui-layer-btn0').attr({

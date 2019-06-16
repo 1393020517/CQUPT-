@@ -19,13 +19,13 @@ function getCookie(c_name) {
     return "";
 }
 
-// window.onload=function () {
-//
-//     var cookie=getCookie('CQUPT_pictures_manager');
-//     if(cookie==='' ){
-//         location = "./login.html"
-//     }
-// };
+window.onload=function () {
+
+    var cookie=getCookie('CQUPT_pictures_manager');
+    if(cookie==='' ){
+        location = "./login.html"
+    }
+};
 
 
 

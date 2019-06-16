@@ -6,14 +6,15 @@
  * Time: 13:10
  * Function: 返回正式上线的图片
  */
-header("Content-type: text/html;charset = utf-8");
+//header("Content-type: text/html;charset = utf-8");
 include_once("conn.php");
 const NUM_PAGE = 12;   //定义常量
 $page = $_POST['page'];
-$str = "SELECT paths FROM photos";
+$label = $_POST['title'];
+$str = "SELECT paths FROM photos WHERE label = '".$label."'";
 $result = mysqli_query($a, $str);
 $aff = mysqli_affected_rows($a);
-if ($aff > 0) {   //正式图库里有图片
+if ($aff > 0) {   //此标签下面有图片
     $new_arr = [];
     while ($resarr = mysqli_fetch_row($result)) {
         $new_arr[] = $resarr[0];
@@ -37,6 +38,10 @@ if ($aff > 0) {   //正式图库里有图片
 //    var_dump($rows);
     echo json_encode($rows);
 }
-else {   //没有未审核的记录
-    echo json_encode(["status" => false]);
+else {
+    $arr =[];
+    for($i = ($page-1)*NUM_PAGE ; $i < $page*NUM_PAGE; $i++) {
+        $arr[] =array('src'=> "",'title' => "",'click' =>"",'zan' => "");
+    }
+    echo json_encode($arr);
 }
